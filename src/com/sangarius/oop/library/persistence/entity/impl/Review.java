@@ -15,6 +15,7 @@ public class Review extends Entity {
     private String reviewText;
     private int rating;
     private int reviewerId;
+    private UUID bookId;
 
     /**
      * Constructs a new Review with the specified details.
@@ -23,12 +24,14 @@ public class Review extends Entity {
      * @param reviewText  The text of the review.
      * @param rating      The rating given in the review.
      * @param reviewerId  The ID of the reviewer (user).
+     * @param bookId      The ID of the associated book.
      */
-    public Review(UUID id, String reviewText, int rating, int reviewerId) {
+    public Review(UUID id, String reviewText, int rating, int reviewerId, UUID bookId) {
         super(id);
         this.reviewText = reviewText;
         this.rating = rating;
         this.reviewerId = reviewerId;
+        this.bookId = bookId;
         validateReview();
     }
 
@@ -92,12 +95,32 @@ public class Review extends Entity {
     }
 
     /**
+     * Gets the ID of the associated book.
+     *
+     * @return The ID of the associated book.
+     */
+    public UUID getBookId() {
+        return bookId;
+    }
+
+    /**
+     * Sets the ID of the associated book.
+     *
+     * @param bookId The new ID of the associated book.
+     */
+    public void setBookId(UUID bookId) {
+        this.bookId = bookId;
+        validateBookId();
+    }
+
+    /**
      * Validates the review entity and populates errors list if validation fails.
      */
     private void validateReview() {
         validateReviewText();
         validateRating();
         validateReviewerId();
+        validateBookId();
 
         if (!this.errors.isEmpty()) {
             throw new EntityArgumentException(errors);
@@ -124,6 +147,14 @@ public class Review extends Entity {
         final String templateName = "Reviewer ID";
 
         if (reviewerId <= 0) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+    }
+
+    private void validateBookId() {
+        final String templateName = "Book ID";
+
+        if (bookId == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }
@@ -168,6 +199,7 @@ public class Review extends Entity {
             ", reviewText='" + reviewText + '\'' +
             ", rating=" + rating +
             ", reviewerId=" + reviewerId +
+            ", bookId=" + bookId +
             '}';
     }
 }

@@ -136,6 +136,19 @@ public class Book extends Entity {
     }
 
     /**
+     * Checks whether the book is available for borrowing.
+     *
+     * @return {@code true} if the book is available, {@code false} otherwise.
+     */
+    public boolean isAvailable() {
+        // In this example, let's assume a simple availability check based on reviews.
+        // You can customize this logic based on your specific requirements.
+
+        // If there are no reviews or all reviews have a positive rating, consider the book available.
+        return reviews.isEmpty() || reviews.stream().allMatch(review -> review.getRating() > 0);
+    }
+
+    /**
      * Validates the book entity and populates errors list if validation fails.
      */
     private void validateBook() {

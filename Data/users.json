@@ -1,0 +1,23 @@
+[][
+  {
+    "email": "abe.cremin@hotmail.com",
+    "name": "Kimbery Bradtke",
+    "id": "66f963f4-8fac-4bd0-ade0-d85f4c997265",
+    "errors": [],
+    "isValid": false
+  },
+  {
+    "email": "sammie.bahringer@yahoo.com",
+    "name": "Miss Minh Mueller",
+    "id": "e30e641c-7a2f-4d68-a88a-def9b90e5050",
+    "errors": [],
+    "isValid": false
+  },
+  {
+    "email": "petrina.hintz@yahoo.com",
+    "name": "Harland Heller",
+    "id": "5c0177e9-e537-488c-9e6f-80ab162ce445",
+    "errors": [],
+    "isValid": false
+  }
+]

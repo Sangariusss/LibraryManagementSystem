@@ -16,6 +16,7 @@ public class Loan extends Entity {
     private LocalDate loanDate;
     private LocalDate dueDate;
     private int borrowerId;
+    private Book borrowedBook;
 
     /**
      * Constructs a new Loan with the specified details.
@@ -24,12 +25,14 @@ public class Loan extends Entity {
      * @param loanDate    The date when the loan was made.
      * @param dueDate     The due date for returning the book.
      * @param borrowerId  The ID of the borrower (user).
+     * @param borrowedBook The book being borrowed.
      */
-    public Loan(UUID id, LocalDate loanDate, LocalDate dueDate, int borrowerId) {
+    public Loan(UUID id, LocalDate loanDate, LocalDate dueDate, int borrowerId, Book borrowedBook) {
         super(id);
         this.loanDate = loanDate;
         this.dueDate = dueDate;
         this.borrowerId = borrowerId;
+        this.borrowedBook = borrowedBook;
         validateLoan();
     }
 
@@ -93,6 +96,25 @@ public class Loan extends Entity {
     }
 
     /**
+     * Gets the book being borrowed.
+     *
+     * @return The book being borrowed.
+     */
+    public Book getBorrowedBook() {
+        return borrowedBook;
+    }
+
+    /**
+     * Sets the book being borrowed.
+     *
+     * @param borrowedBook The new book being borrowed.
+     */
+    public void setBorrowedBook(Book borrowedBook) {
+        this.borrowedBook = borrowedBook;
+        validateBorrowedBook();
+    }
+
+    /**
      * Validates the loan entity and populates errors list if validation fails.
      */
     private void validateLoan() {
@@ -125,6 +147,14 @@ public class Loan extends Entity {
         final String templateName = "Borrower ID";
 
         if (borrowerId <= 0) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+    }
+
+    private void validateBorrowedBook() {
+        final String templateName = "Borrowed Book";
+
+        if (borrowedBook == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }
@@ -169,6 +199,7 @@ public class Loan extends Entity {
             ", loanDate=" + loanDate +
             ", dueDate=" + dueDate +
             ", borrowerId=" + borrowerId +
+            ", borrowedBook=" + borrowedBook +
             '}';
     }
 }
