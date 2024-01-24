@@ -9,6 +9,7 @@ public enum ErrorTemplates {
     MIN_LENGTH("Field %s cannot be less than %d characters."),
     MAX_LENGTH("Field %s cannot exceed %d characters."),
     YEAR_RANGE("Field %s must be a 4-digit number."),
+    RATING_RANGE("Field %s must be a number between 1 and 5."),
     ONLY_LATIN("Field %s allows only Latin characters and _."),
     PASSWORD("Field %s requires at least one uppercase letter, one lowercase letter, and one digit.");
 

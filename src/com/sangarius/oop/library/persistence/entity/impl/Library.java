@@ -1,15 +1,19 @@
 package com.sangarius.oop.library.persistence.entity.impl;
 
-import com.sangarius.oop.library.persistence.entity.impl.Loan;
-import com.sangarius.oop.library.persistence.entity.impl.User;
+import com.sangarius.oop.library.persistence.entity.Entity;
+import com.sangarius.oop.library.persistence.entity.ErrorTemplates;
+import com.sangarius.oop.library.persistence.exception.EntityArgumentException;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
 
 /**
  * Represents a library that holds books and manages user activities.
  */
-public class Library {
-    private int id;
+public class Library extends Entity {
+
     private String name;
     private String address;
     private String email;
@@ -25,35 +29,18 @@ public class Library {
      * @param address The address of the library.
      * @param email   The email of the library.
      */
-    public Library(int id, String name, String address, String email) {
-        this.id = id;
+    public Library(UUID id, String name, String address, String email) {
+        super(id);
         this.name = name;
         this.address = address;
         this.email = email;
         this.books = new ArrayList<>();
         this.users = new ArrayList<>();
         this.loans = new ArrayList<>();
+        validateLibrary();
     }
 
     // Getters and setters for class fields
-
-    /**
-     * Gets the ID of the library.
-     *
-     * @return The ID of the library.
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets the ID of the library.
-     *
-     * @param id The new ID of the library.
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
 
     /**
      * Gets the name of the library.
@@ -71,6 +58,7 @@ public class Library {
      */
     public void setName(String name) {
         this.name = name;
+        validateName();
     }
 
     /**
@@ -89,6 +77,7 @@ public class Library {
      */
     public void setAddress(String address) {
         this.address = address;
+        validateAddress();
     }
 
     /**
@@ -107,6 +96,7 @@ public class Library {
      */
     public void setEmail(String email) {
         this.email = email;
+        validateEmail();
     }
 
     /**
@@ -134,5 +124,97 @@ public class Library {
      */
     public List<Loan> getLoans() {
         return loans;
+    }
+
+    /**
+     * Validates the library entity and populates errors list if validation fails.
+     */
+    private void validateLibrary() {
+        validateName();
+        validateAddress();
+        validateEmail();
+
+        if (!this.errors.isEmpty()) {
+            throw new EntityArgumentException(errors);
+        }
+    }
+
+    private void validateName() {
+        final String templateName = "Library Name";
+
+        if (name == null || name.isBlank()) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+        if (name == null || name.length() > 255) {
+            errors.add(ErrorTemplates.MAX_LENGTH.getTemplate().formatted(templateName, 255));
+        }
+    }
+
+    private void validateAddress() {
+        final String templateName = "Library Address";
+
+        if (address == null || address.isBlank()) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+        if (address == null || address.length() > 255) {
+            errors.add(ErrorTemplates.MAX_LENGTH.getTemplate().formatted(templateName, 255));
+        }
+    }
+
+    private void validateEmail() {
+        final String templateName = "Library Email";
+
+        if (email == null || email.isBlank()) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+        if (email == null || email.length() > 255) {
+            errors.add(ErrorTemplates.MAX_LENGTH.getTemplate().formatted(templateName, 255));
+        }
+    }
+
+    /**
+     * Compares this library to another object for equality.
+     *
+     * @param o The object to compare to.
+     * @return {@code true} if the objects are equal, {@code false} otherwise.
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Library library = (Library) o;
+        return Objects.equals(id, library.id);
+    }
+
+    /**
+     * Computes a hash code for this library.
+     *
+     * @return A hash code value for this library.
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    /**
+     * Returns a string representation of the library.
+     *
+     * @return A string representation of the library.
+     */
+    @Override
+    public String toString() {
+        return "Library{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", address='" + address + '\'' +
+            ", email='" + email + '\'' +
+            ", books=" + books +
+            ", users=" + users +
+            ", loans=" + loans +
+            '}';
     }
 }

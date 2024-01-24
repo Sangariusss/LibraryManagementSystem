@@ -1,10 +1,17 @@
 package com.sangarius.oop.library.persistence.entity.impl;
 
+import com.sangarius.oop.library.persistence.entity.Entity;
+import com.sangarius.oop.library.persistence.entity.ErrorTemplates;
+import com.sangarius.oop.library.persistence.exception.EntityArgumentException;
+
+import java.util.Objects;
+import java.util.UUID;
+
 /**
  * Represents a review for a book in the library.
  */
-public class Review {
-    private int id;
+public class Review extends Entity {
+
     private String reviewText;
     private int rating;
     private int reviewerId;
@@ -17,32 +24,15 @@ public class Review {
      * @param rating      The rating given in the review.
      * @param reviewerId  The ID of the reviewer (user).
      */
-    public Review(int id, String reviewText, int rating, int reviewerId) {
-        this.id = id;
+    public Review(UUID id, String reviewText, int rating, int reviewerId) {
+        super(id);
         this.reviewText = reviewText;
         this.rating = rating;
         this.reviewerId = reviewerId;
+        validateReview();
     }
 
     // Getters and setters for class fields
-
-    /**
-     * Gets the ID of the review.
-     *
-     * @return The ID of the review.
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets the ID of the review.
-     *
-     * @param id The new ID of the review.
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
 
     /**
      * Gets the text of the review.
@@ -60,6 +50,7 @@ public class Review {
      */
     public void setReviewText(String reviewText) {
         this.reviewText = reviewText;
+        validateReviewText();
     }
 
     /**
@@ -78,6 +69,7 @@ public class Review {
      */
     public void setRating(int rating) {
         this.rating = rating;
+        validateRating();
     }
 
     /**
@@ -96,5 +88,86 @@ public class Review {
      */
     public void setReviewerId(int reviewerId) {
         this.reviewerId = reviewerId;
+        validateReviewerId();
+    }
+
+    /**
+     * Validates the review entity and populates errors list if validation fails.
+     */
+    private void validateReview() {
+        validateReviewText();
+        validateRating();
+        validateReviewerId();
+
+        if (!this.errors.isEmpty()) {
+            throw new EntityArgumentException(errors);
+        }
+    }
+
+    private void validateReviewText() {
+        final String templateName = "Review Text";
+
+        if (reviewText == null || reviewText.isBlank()) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+    }
+
+    private void validateRating() {
+        final String templateName = "Rating";
+
+        if (rating < 1 || rating > 5) {
+            errors.add(ErrorTemplates.RATING_RANGE.getTemplate().formatted(templateName));
+        }
+    }
+
+    private void validateReviewerId() {
+        final String templateName = "Reviewer ID";
+
+        if (reviewerId <= 0) {
+            errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
+        }
+    }
+
+    /**
+     * Compares this review to another object for equality.
+     *
+     * @param o The object to compare to.
+     * @return {@code true} if the objects are equal, {@code false} otherwise.
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Review review = (Review) o;
+        return Objects.equals(id, review.id);
+    }
+
+    /**
+     * Computes a hash code for this review.
+     *
+     * @return A hash code value for this review.
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    /**
+     * Returns a string representation of the review.
+     *
+     * @return A string representation of the review.
+     */
+    @Override
+    public String toString() {
+        return "Review{" +
+            "id=" + id +
+            ", reviewText='" + reviewText + '\'' +
+            ", rating=" + rating +
+            ", reviewerId=" + reviewerId +
+            '}';
     }
 }

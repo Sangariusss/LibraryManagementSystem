@@ -6,6 +6,7 @@ import com.sangarius.oop.library.persistence.entity.ErrorTemplates;
 import com.sangarius.oop.library.persistence.exception.EntityArgumentException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -154,7 +155,7 @@ public class Book extends Entity {
         if (title == null || title.isBlank()) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
-        if (title.length() > 255) {
+        if (title == null || title.length() > 255) {
             errors.add(ErrorTemplates.MAX_LENGTH.getTemplate().formatted(templateName, 255));
         }
     }
@@ -165,7 +166,7 @@ public class Book extends Entity {
         if (author == null || author.isBlank()) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
-        if (author.length() > 100) {
+        if (author == null || author.length() > 100) {
             errors.add(ErrorTemplates.MAX_LENGTH.getTemplate().formatted(templateName, 100));
         }
     }
@@ -190,6 +191,34 @@ public class Book extends Entity {
         if (yearPublished < 1000 || yearPublished > 9999) {
             errors.add(ErrorTemplates.YEAR_RANGE.getTemplate());
         }
+    }
+
+    /**
+     * Compares this book to another object for equality.
+     *
+     * @param o The object to compare to.
+     * @return {@code true} if the objects are equal, {@code false} otherwise.
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Book book = (Book) o;
+        return Objects.equals(id, book.id);
+    }
+
+    /**
+     * Computes a hash code for this book.
+     *
+     * @return A hash code value for this book.
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
     @Override
