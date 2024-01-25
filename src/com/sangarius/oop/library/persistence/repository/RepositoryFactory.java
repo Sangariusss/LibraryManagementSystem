@@ -1,6 +1,5 @@
 package com.sangarius.oop.library.persistence.repository;
 
-import com.sangarius.oop.library.persistence.entity.impl.Category;
 import com.sangarius.oop.library.persistence.repository.contracts.CategoryRepository;
 import com.sangarius.oop.library.persistence.repository.contracts.LoanRepository;
 import com.sangarius.oop.library.persistence.repository.contracts.BookRepository;

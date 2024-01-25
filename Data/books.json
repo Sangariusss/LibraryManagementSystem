@@ -1,1 +1,35 @@
-[][]
+[][
+  {
+    "title": "I Sing the Body Electric",
+    "author": "Erica Kunze",
+    "category": {
+      "name": "Fiction narrative",
+      "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+    },
+    "yearPublished": 1815,
+    "reviews": [],
+    "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+  },
+  {
+    "title": "Sleep the Brave",
+    "author": "Alfred Beer",
+    "category": {
+      "name": "Folklore",
+      "id": "61cfc842-39d3-4ff5-8e92-4164fdefdbda"
+    },
+    "yearPublished": 1939,
+    "reviews": [],
+    "id": "c8651e77-47c9-4818-8afd-1ed1ed15c87d"
+  },
+  {
+    "title": "A Handful of Dust",
+    "author": "Meaghan Maggio",
+    "category": {
+      "name": "Narrative nonfiction",
+      "id": "5505e3a9-253f-40bb-8a84-9b4942654554"
+    },
+    "yearPublished": 1874,
+    "reviews": [],
+    "id": "20d8d47e-b035-43a2-85db-d3b1ed0b07ce"
+  }
+]

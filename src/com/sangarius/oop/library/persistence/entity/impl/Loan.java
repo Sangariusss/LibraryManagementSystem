@@ -15,7 +15,7 @@ public class Loan extends Entity {
 
     private LocalDate loanDate;
     private LocalDate dueDate;
-    private int borrowerId;
+    private UUID borrowerId;
     private Book borrowedBook;
 
     /**
@@ -27,7 +27,7 @@ public class Loan extends Entity {
      * @param borrowerId  The ID of the borrower (user).
      * @param borrowedBook The book being borrowed.
      */
-    public Loan(UUID id, LocalDate loanDate, LocalDate dueDate, int borrowerId, Book borrowedBook) {
+    public Loan(UUID id, LocalDate loanDate, LocalDate dueDate, UUID borrowerId, Book borrowedBook) {
         super(id);
         this.loanDate = loanDate;
         this.dueDate = dueDate;
@@ -81,7 +81,7 @@ public class Loan extends Entity {
      *
      * @return The ID of the borrower (user).
      */
-    public int getBorrowerId() {
+    public UUID getBorrowerId() {
         return borrowerId;
     }
 
@@ -90,7 +90,7 @@ public class Loan extends Entity {
      *
      * @param borrowerId The new ID of the borrower (user).
      */
-    public void setBorrowerId(int borrowerId) {
+    public void setBorrowerId(UUID borrowerId) {
         this.borrowerId = borrowerId;
         validateBorrowerId();
     }
@@ -146,7 +146,7 @@ public class Loan extends Entity {
     private void validateBorrowerId() {
         final String templateName = "Borrower ID";
 
-        if (borrowerId <= 0) {
+        if (borrowerId == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }

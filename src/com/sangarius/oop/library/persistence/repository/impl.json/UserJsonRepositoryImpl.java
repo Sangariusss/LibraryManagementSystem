@@ -20,7 +20,9 @@ public class UserJsonRepositoryImpl extends GenericJsonRepository<User> implemen
      * @param gson The Gson instance for JSON serialization/deserialization.
      */
     public UserJsonRepositoryImpl(Gson gson) {
-        super(gson, JsonPathFactory.USERS.getPath(), new TypeToken<Set<User>>() {}.getType());
+        super(gson, JsonPathFactory.USERS.getPath(), TypeToken
+            .getParameterized(Set.class, User.class)
+            .getType());
     }
 
     /**

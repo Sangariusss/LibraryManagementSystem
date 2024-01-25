@@ -45,7 +45,7 @@ public class ReviewJsonRepositoryImpl extends GenericJsonRepository<Review> impl
     @Override
     public Set<Review> findAllByReviewerId(int reviewerId) {
         return entities.stream()
-            .filter(review -> reviewerId == review.getReviewerId())
+            .filter(review -> reviewerId == review.getReviewerId().hashCode())
             .collect(Collectors.toSet());
     }
 

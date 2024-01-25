@@ -1,1 +1,23 @@
-[][]
+[][
+  {
+    "reviewText": "Voluptatem veniam dolorem est dolorum. Ratione suscipit est expedita beatae cupiditate. Tempore dignissimos suscipit iste.",
+    "rating": 1,
+    "reviewerId": "5b0b9136-a52d-47ae-acde-945384b238c5",
+    "bookId": "02577818-76f8-4627-9e53-e199e16b8bc9",
+    "id": "8315ef98-b411-49e6-af6a-96c6fceb6b8e"
+  },
+  {
+    "reviewText": "Et odio est assumenda. Cumque quo velit vitae consequatur voluptates ut. Iusto voluptatem accusamus delectus est voluptate maxime omnis.",
+    "rating": 4,
+    "reviewerId": "5b0b9136-a52d-47ae-acde-945384b238c5",
+    "bookId": "20da6663-2e01-4d0c-81f4-bb336076cb37",
+    "id": "80073695-5848-472a-9224-f81c85c97927"
+  },
+  {
+    "reviewText": "Ipsa blanditiis omnis ex libero rem. Quae voluptas quis. Omnis ullam et eaque ut.",
+    "rating": 4,
+    "reviewerId": "4f540807-d1c6-4bea-a536-1947e99343c9",
+    "bookId": "bf090a2f-f653-44b6-b76e-d7958bca317b",
+    "id": "874d35a8-c3b4-467d-ab83-33700ef1f04e"
+  }
+]

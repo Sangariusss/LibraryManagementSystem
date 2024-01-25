@@ -1,1 +1,53 @@
-[][]
+[][
+  {
+    "loanDate": "12-01-2024",
+    "dueDate": "03-02-2024",
+    "borrowerId": "4f540807-d1c6-4bea-a536-1947e99343c9",
+    "borrowedBook": {
+      "title": "I Sing the Body Electric",
+      "author": "Erica Kunze",
+      "category": {
+        "name": "Fiction narrative",
+        "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+      },
+      "yearPublished": 1815,
+      "reviews": [],
+      "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+    },
+    "id": "0887d5a7-d835-41d4-9426-949930d2ce38"
+  },
+  {
+    "loanDate": "30-12-2023",
+    "dueDate": "13-01-2024",
+    "borrowerId": "4f540807-d1c6-4bea-a536-1947e99343c9",
+    "borrowedBook": {
+      "title": "I Sing the Body Electric",
+      "author": "Erica Kunze",
+      "category": {
+        "name": "Fiction narrative",
+        "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+      },
+      "yearPublished": 1815,
+      "reviews": [],
+      "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+    },
+    "id": "65211c9d-22c4-4412-9642-6502f96084cd"
+  },
+  {
+    "loanDate": "16-01-2024",
+    "dueDate": "31-01-2024",
+    "borrowerId": "48670ae1-4f69-4817-98d1-575380df7327",
+    "borrowedBook": {
+      "title": "I Sing the Body Electric",
+      "author": "Erica Kunze",
+      "category": {
+        "name": "Fiction narrative",
+        "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+      },
+      "yearPublished": 1815,
+      "reviews": [],
+      "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+    },
+    "id": "c088e770-1409-4c60-afad-69445af6b002"
+  }
+]

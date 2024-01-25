@@ -33,7 +33,7 @@ public class LoanJsonRepositoryImpl extends GenericJsonRepository<Loan> implemen
     @Override
     public Set<Loan> findAllByBorrowerId(int borrowerId) {
         return entities.stream()
-            .filter(loan -> borrowerId == loan.getBorrowerId())
+            .filter(loan -> borrowerId == loan.getBorrowerId().hashCode())
             .collect(Collectors.toSet());
     }
 

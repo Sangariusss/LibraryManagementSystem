@@ -19,12 +19,12 @@ public abstract class Entity {
     /**
      * List of validation errors associated with the entity.
      */
-    protected List<String> errors;
+    protected transient List<String> errors;
 
     /**
      * Flag indicating whether the entity is considered valid.
      */
-    protected boolean isValid;
+    protected transient boolean isValid;
 
     /**
      * Constructs a new entity with the given ID.

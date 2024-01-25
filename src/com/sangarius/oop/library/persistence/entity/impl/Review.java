@@ -14,7 +14,7 @@ public class Review extends Entity {
 
     private String reviewText;
     private int rating;
-    private int reviewerId;
+    private UUID reviewerId;
     private UUID bookId;
 
     /**
@@ -26,7 +26,7 @@ public class Review extends Entity {
      * @param reviewerId  The ID of the reviewer (user).
      * @param bookId      The ID of the associated book.
      */
-    public Review(UUID id, String reviewText, int rating, int reviewerId, UUID bookId) {
+    public Review(UUID id, String reviewText, int rating, UUID reviewerId, UUID bookId) {
         super(id);
         this.reviewText = reviewText;
         this.rating = rating;
@@ -80,7 +80,7 @@ public class Review extends Entity {
      *
      * @return The ID of the reviewer (user).
      */
-    public int getReviewerId() {
+    public UUID getReviewerId() {
         return reviewerId;
     }
 
@@ -89,7 +89,7 @@ public class Review extends Entity {
      *
      * @param reviewerId The new ID of the reviewer (user).
      */
-    public void setReviewerId(int reviewerId) {
+    public void setReviewerId(UUID reviewerId) {
         this.reviewerId = reviewerId;
         validateReviewerId();
     }
@@ -146,7 +146,7 @@ public class Review extends Entity {
     private void validateReviewerId() {
         final String templateName = "Reviewer ID";
 
-        if (reviewerId <= 0) {
+        if (reviewerId == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }

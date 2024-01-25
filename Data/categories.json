@@ -1,1 +1,14 @@
-[][]
+[][
+  {
+    "name": "Fanfiction",
+    "id": "a4536174-dfc2-4a81-9d38-9326274e1697"
+  },
+  {
+    "name": "Horror",
+    "id": "05241e2a-d460-42a6-bda4-f27ae6fe5d5c"
+  },
+  {
+    "name": "Fairy tale",
+    "id": "935c229d-21bc-45a1-87ea-d6620f096ab7"
+  }
+]

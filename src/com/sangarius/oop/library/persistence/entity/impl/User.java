@@ -1,9 +1,11 @@
 package com.sangarius.oop.library.persistence.entity.impl;
 
+import com.google.gson.annotations.Expose;
 import com.sangarius.oop.library.persistence.entity.Entity;
 import com.sangarius.oop.library.persistence.entity.ErrorTemplates;
 import com.sangarius.oop.library.persistence.exception.EntityArgumentException;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
