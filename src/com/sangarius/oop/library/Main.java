@@ -20,6 +20,7 @@ import com.sangarius.oop.library.service.generator.UserGenerator;
 import com.sangarius.oop.library.service.generator.LoanGenerator;
 import com.sangarius.oop.library.persistence.entity.impl.Loan;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -63,10 +64,9 @@ public class Main {
         categoryService.processCategoriesAndCommit(categories);
 
         // Library-related operations
-        LibraryRepositoryService libraryService = new LibraryRepositoryService(jsonRepositoryFactory.getLibraryRepository());
-        Set<Library> libraries = LibraryGenerator.generateLibraries(3);
-        libraryService.processLibrariesAndCommit(libraries);
-
+        LibraryRepositoryService libraryService = LibraryRepositoryService.createLibraryRepositoryService(jsonRepositoryFactory);
+        Set<Library> libraries = LibraryGenerator.generateLibraries(3, users, books, loans);
+        libraryService.processLibrariesAndCommit(libraries, users, books, loans);
 
         // Commit changes for all repositories
         jsonRepositoryFactory.commit();

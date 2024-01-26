@@ -1,29 +1,332 @@
 [][
   {
-    "name": "Buckridge and Sons",
-    "address": "1112 Kaitlin Trace, Dwayneside, CA 54002-2292",
-    "email": "les.gleason@gmail.com",
-    "books": [],
-    "users": [],
-    "loans": [],
-    "id": "c2eb2f23-ceda-4df4-b99c-07175fee6089"
-  },
-  {
-    "name": "Kuhn Group",
-    "address": "Suite 286 7604 Predovic Ways, Lake Angelo, VT 26159",
-    "email": "everette.pfannerstill@gmail.com",
-    "books": [],
-    "users": [],
-    "loans": [],
-    "id": "51f59f30-01b5-4184-99f0-98b91cd6e201"
-  },
-  {
-    "name": "Von, Greenfelder and Kilback",
-    "address": "Apt. 122 2268 Jeneva Mission, East Chasland, HI 19631-2572",
-    "email": "teodoro.wehner@yahoo.com",
-    "books": [],
-    "users": [],
-    "loans": [],
-    "id": "c0e0e74e-b116-4363-b730-33465e55c606"
+    "name": "Rosenbaum, Pfeffer and Armstrong",
+    "address": "46595 Olson Loaf, Rempelborough, MN 79391-3535",
+    "email": "emma.upton@gmail.com",
+    "books": [
+      {
+        "title": "The Doors of Perception",
+        "author": "Cornelius Brekke",
+        "category": {
+          "name": "Suspense/Thriller",
+          "id": "4f218d50-bf2e-403f-9dee-84c07d16425b"
+        },
+        "yearPublished": 1918,
+        "reviews": [
+          {
+            "reviewText": "Qui quam neque. Eum adipisci quia consequatur aliquid reiciendis dolor. Quisquam minima pariatur ducimus. Beatae eligendi dolorem dolorum voluptatem eveniet. Dolorem recusandae sunt officiis quasi non officia.",
+            "rating": 2,
+            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+            "bookId": "54609290-7140-420a-90bc-1416036d8056",
+            "id": "6ac3313a-10ff-4374-b935-c302e70169ee"
+          }
+        ],
+        "id": "16a6af04-f3f0-4cba-972b-f04d27c58fcc"
+      },
+      {
+        "title": "Fair Stood the Wind for France",
+        "author": "Ranee Baumbach",
+        "category": {
+          "name": "Mythopoeia",
+          "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+        },
+        "yearPublished": 1980,
+        "reviews": [
+          {
+            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+            "rating": 1,
+            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+          }
+        ],
+        "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+      },
+      {
+        "title": "Quo Vadis",
+        "author": "Lorine Hermiston",
+        "category": {
+          "name": "Short story",
+          "id": "6cda50e7-ef6d-4429-a74e-46f417679c11"
+        },
+        "yearPublished": 1915,
+        "reviews": [
+          {
+            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+            "rating": 1,
+            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+          }
+        ],
+        "id": "ebd8f5dd-7f39-4450-bf58-e96e95278180"
+      },
+      {
+        "title": "The Doors of Perception",
+        "author": "Cornelius Brekke",
+        "category": {
+          "name": "Suspense/Thriller",
+          "id": "4f218d50-bf2e-403f-9dee-84c07d16425b"
+        },
+        "yearPublished": 1918,
+        "reviews": [
+          {
+            "reviewText": "Qui quam neque. Eum adipisci quia consequatur aliquid reiciendis dolor. Quisquam minima pariatur ducimus. Beatae eligendi dolorem dolorum voluptatem eveniet. Dolorem recusandae sunt officiis quasi non officia.",
+            "rating": 2,
+            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+            "bookId": "54609290-7140-420a-90bc-1416036d8056",
+            "id": "6ac3313a-10ff-4374-b935-c302e70169ee"
+          }
+        ],
+        "id": "16a6af04-f3f0-4cba-972b-f04d27c58fcc"
+      },
+      {
+        "title": "Fair Stood the Wind for France",
+        "author": "Ranee Baumbach",
+        "category": {
+          "name": "Mythopoeia",
+          "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+        },
+        "yearPublished": 1980,
+        "reviews": [
+          {
+            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+            "rating": 1,
+            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+          }
+        ],
+        "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+      },
+      {
+        "title": "Quo Vadis",
+        "author": "Lorine Hermiston",
+        "category": {
+          "name": "Short story",
+          "id": "6cda50e7-ef6d-4429-a74e-46f417679c11"
+        },
+        "yearPublished": 1915,
+        "reviews": [
+          {
+            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+            "rating": 1,
+            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+          }
+        ],
+        "id": "ebd8f5dd-7f39-4450-bf58-e96e95278180"
+      }
+    ],
+    "users": [
+      {
+        "email": "dexter.tremblay@hotmail.com",
+        "name": "Oswaldo Fahey",
+        "id": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef"
+      },
+      {
+        "email": "holly.torp@hotmail.com",
+        "name": "Merissa Lind",
+        "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+      },
+      {
+        "email": "fred.conn@hotmail.com",
+        "name": "Bridgett Runte",
+        "id": "827530a8-f116-400c-b096-ae95945ae086"
+      },
+      {
+        "email": "dexter.tremblay@hotmail.com",
+        "name": "Oswaldo Fahey",
+        "id": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef"
+      },
+      {
+        "email": "holly.torp@hotmail.com",
+        "name": "Merissa Lind",
+        "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+      },
+      {
+        "email": "fred.conn@hotmail.com",
+        "name": "Bridgett Runte",
+        "id": "827530a8-f116-400c-b096-ae95945ae086"
+      }
+    ],
+    "loans": [
+      {
+        "loanDate": "20-01-2024",
+        "dueDate": "30-01-2024",
+        "borrower": {
+          "email": "holly.torp@hotmail.com",
+          "name": "Merissa Lind",
+          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+        },
+        "borrowedBook": {
+          "title": "Fair Stood the Wind for France",
+          "author": "Ranee Baumbach",
+          "category": {
+            "name": "Mythopoeia",
+            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          },
+          "yearPublished": 1980,
+          "reviews": [
+            {
+              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+              "rating": 1,
+              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            }
+          ],
+          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        },
+        "id": "fa809aef-694a-4923-af19-e9b76014ad76"
+      },
+      {
+        "loanDate": "03-01-2024",
+        "dueDate": "24-01-2024",
+        "borrower": {
+          "email": "holly.torp@hotmail.com",
+          "name": "Merissa Lind",
+          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+        },
+        "borrowedBook": {
+          "title": "Fair Stood the Wind for France",
+          "author": "Ranee Baumbach",
+          "category": {
+            "name": "Mythopoeia",
+            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          },
+          "yearPublished": 1980,
+          "reviews": [
+            {
+              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+              "rating": 1,
+              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            }
+          ],
+          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        },
+        "id": "ae007891-e016-4d29-96e4-9de4b41507d0"
+      },
+      {
+        "loanDate": "11-01-2024",
+        "dueDate": "18-01-2024",
+        "borrower": {
+          "email": "fred.conn@hotmail.com",
+          "name": "Bridgett Runte",
+          "id": "827530a8-f116-400c-b096-ae95945ae086"
+        },
+        "borrowedBook": {
+          "title": "Fair Stood the Wind for France",
+          "author": "Ranee Baumbach",
+          "category": {
+            "name": "Mythopoeia",
+            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          },
+          "yearPublished": 1980,
+          "reviews": [
+            {
+              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+              "rating": 1,
+              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            }
+          ],
+          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        },
+        "id": "f2b17cdc-83f2-42f5-b825-6ae17f7b318c"
+      },
+      {
+        "loanDate": "20-01-2024",
+        "dueDate": "30-01-2024",
+        "borrower": {
+          "email": "holly.torp@hotmail.com",
+          "name": "Merissa Lind",
+          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+        },
+        "borrowedBook": {
+          "title": "Fair Stood the Wind for France",
+          "author": "Ranee Baumbach",
+          "category": {
+            "name": "Mythopoeia",
+            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          },
+          "yearPublished": 1980,
+          "reviews": [
+            {
+              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+              "rating": 1,
+              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            }
+          ],
+          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        },
+        "id": "fa809aef-694a-4923-af19-e9b76014ad76"
+      },
+      {
+        "loanDate": "03-01-2024",
+        "dueDate": "24-01-2024",
+        "borrower": {
+          "email": "holly.torp@hotmail.com",
+          "name": "Merissa Lind",
+          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+        },
+        "borrowedBook": {
+          "title": "Fair Stood the Wind for France",
+          "author": "Ranee Baumbach",
+          "category": {
+            "name": "Mythopoeia",
+            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          },
+          "yearPublished": 1980,
+          "reviews": [
+            {
+              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+              "rating": 1,
+              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            }
+          ],
+          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        },
+        "id": "ae007891-e016-4d29-96e4-9de4b41507d0"
+      },
+      {
+        "loanDate": "11-01-2024",
+        "dueDate": "18-01-2024",
+        "borrower": {
+          "email": "fred.conn@hotmail.com",
+          "name": "Bridgett Runte",
+          "id": "827530a8-f116-400c-b096-ae95945ae086"
+        },
+        "borrowedBook": {
+          "title": "Fair Stood the Wind for France",
+          "author": "Ranee Baumbach",
+          "category": {
+            "name": "Mythopoeia",
+            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          },
+          "yearPublished": 1980,
+          "reviews": [
+            {
+              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+              "rating": 1,
+              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
+              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
+              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            }
+          ],
+          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        },
+        "id": "f2b17cdc-83f2-42f5-b825-6ae17f7b318c"
+      }
+    ],
+    "id": "ca1f490c-f95e-46b9-a61c-b0229737325d"
   }
 ]

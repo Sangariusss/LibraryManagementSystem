@@ -1,14 +1,14 @@
 [][
   {
+    "name": "Suspense/Thriller",
+    "id": "6a6de324-4253-42e1-aad4-ecdd81580029"
+  },
+  {
+    "name": "Speech",
+    "id": "940fa9f0-ffba-42fe-bd9b-cef1de9c6ade"
+  },
+  {
     "name": "Fanfiction",
-    "id": "dd3a11da-0fe1-4f9a-acb2-eaf6a03686e0"
-  },
-  {
-    "name": "Reference book",
-    "id": "1a8d6134-38ab-4264-bfeb-255f3764041c"
-  },
-  {
-    "name": "Crime/Detective",
-    "id": "33eae959-c253-4ed1-be4d-ff54cffb792e"
+    "id": "b039c184-d6e6-4dbf-ac7b-a56cf24f5bf3"
   }
 ]

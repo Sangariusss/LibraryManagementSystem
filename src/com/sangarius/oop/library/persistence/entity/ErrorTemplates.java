@@ -13,7 +13,7 @@ public enum ErrorTemplates {
     ONLY_LATIN("Field %s allows only Latin characters and _."),
     PASSWORD("Field %s requires at least one uppercase letter, one lowercase letter, and one digit.");
 
-    private String template;
+    private final String template;
 
     /**
      * Constructs an error template with the given format.
