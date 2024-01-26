@@ -1,53 +1,89 @@
 [][
   {
-    "loanDate": "12-01-2024",
-    "dueDate": "03-02-2024",
-    "borrowerId": "4f540807-d1c6-4bea-a536-1947e99343c9",
+    "loanDate": "15-01-2024",
+    "dueDate": "04-02-2024",
+    "borrower": {
+      "email": "leroy.ernser@gmail.com",
+      "name": "Sarah Hirthe",
+      "id": "89a5cda6-9cbe-4653-a62d-226c23237fe3"
+    },
     "borrowedBook": {
-      "title": "I Sing the Body Electric",
-      "author": "Erica Kunze",
+      "title": "The Needle\u0027s Eye",
+      "author": "Sabina Brekke",
       "category": {
-        "name": "Fiction narrative",
-        "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+        "name": "Fanfiction",
+        "id": "d52ca8a9-b69a-4eae-84a8-430dfbe0b0c6"
       },
       "yearPublished": 1815,
-      "reviews": [],
-      "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+      "reviews": [
+        {
+          "reviewText": "Et rerum id. Soluta voluptas minus esse hic et qui. Voluptatem et cumque.",
+          "rating": 2,
+          "reviewerId": "dda581cd-14a6-4461-80ca-c7924a3af785",
+          "bookId": "3e1fb4b3-aba0-4440-98b9-68019bfa70fc",
+          "id": "69e435bb-9bc6-467a-b49e-da94e63920f8"
+        }
+      ],
+      "id": "77428eec-3f89-46f4-9da2-eb4f0c4feb68"
     },
-    "id": "0887d5a7-d835-41d4-9426-949930d2ce38"
+    "id": "bae6cc25-204a-4420-a93c-c3da7fc37fa7"
   },
   {
-    "loanDate": "30-12-2023",
-    "dueDate": "13-01-2024",
-    "borrowerId": "4f540807-d1c6-4bea-a536-1947e99343c9",
+    "loanDate": "08-01-2024",
+    "dueDate": "16-01-2024",
+    "borrower": {
+      "email": "titus.wyman@gmail.com",
+      "name": "Gregorio Hansen",
+      "id": "0e45627f-8e59-4561-8c55-e4ce2efbbd9e"
+    },
     "borrowedBook": {
-      "title": "I Sing the Body Electric",
-      "author": "Erica Kunze",
+      "title": "The Needle\u0027s Eye",
+      "author": "Sabina Brekke",
       "category": {
-        "name": "Fiction narrative",
-        "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+        "name": "Fanfiction",
+        "id": "d52ca8a9-b69a-4eae-84a8-430dfbe0b0c6"
       },
       "yearPublished": 1815,
-      "reviews": [],
-      "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+      "reviews": [
+        {
+          "reviewText": "Et rerum id. Soluta voluptas minus esse hic et qui. Voluptatem et cumque.",
+          "rating": 2,
+          "reviewerId": "dda581cd-14a6-4461-80ca-c7924a3af785",
+          "bookId": "3e1fb4b3-aba0-4440-98b9-68019bfa70fc",
+          "id": "69e435bb-9bc6-467a-b49e-da94e63920f8"
+        }
+      ],
+      "id": "77428eec-3f89-46f4-9da2-eb4f0c4feb68"
     },
-    "id": "65211c9d-22c4-4412-9642-6502f96084cd"
+    "id": "76c3fc64-33f0-45ab-b80d-86cab7c48755"
   },
   {
-    "loanDate": "16-01-2024",
-    "dueDate": "31-01-2024",
-    "borrowerId": "48670ae1-4f69-4817-98d1-575380df7327",
+    "loanDate": "04-01-2024",
+    "dueDate": "21-01-2024",
+    "borrower": {
+      "email": "leroy.ernser@gmail.com",
+      "name": "Sarah Hirthe",
+      "id": "89a5cda6-9cbe-4653-a62d-226c23237fe3"
+    },
     "borrowedBook": {
-      "title": "I Sing the Body Electric",
-      "author": "Erica Kunze",
+      "title": "The Needle\u0027s Eye",
+      "author": "Sabina Brekke",
       "category": {
-        "name": "Fiction narrative",
-        "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+        "name": "Fanfiction",
+        "id": "d52ca8a9-b69a-4eae-84a8-430dfbe0b0c6"
       },
       "yearPublished": 1815,
-      "reviews": [],
-      "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+      "reviews": [
+        {
+          "reviewText": "Et rerum id. Soluta voluptas minus esse hic et qui. Voluptatem et cumque.",
+          "rating": 2,
+          "reviewerId": "dda581cd-14a6-4461-80ca-c7924a3af785",
+          "bookId": "3e1fb4b3-aba0-4440-98b9-68019bfa70fc",
+          "id": "69e435bb-9bc6-467a-b49e-da94e63920f8"
+        }
+      ],
+      "id": "77428eec-3f89-46f4-9da2-eb4f0c4feb68"
     },
-    "id": "c088e770-1409-4c60-afad-69445af6b002"
+    "id": "c227f30a-d726-44ab-8477-2dc69905aafe"
   }
 ]

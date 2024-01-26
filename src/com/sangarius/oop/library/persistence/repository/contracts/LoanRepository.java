@@ -1,6 +1,7 @@
 package com.sangarius.oop.library.persistence.repository.contracts;
 
 import com.sangarius.oop.library.persistence.entity.impl.Loan;
+import com.sangarius.oop.library.persistence.entity.impl.User;
 import com.sangarius.oop.library.persistence.repository.Repository;
 
 import java.time.LocalDate;
@@ -13,12 +14,12 @@ import java.util.UUID;
 public interface LoanRepository extends Repository<Loan> {
 
     /**
-     * Finds loans by the borrower's ID.
+     * Finds loans by the borrower.
      *
-     * @param borrowerId The ID of the borrower.
+     * @param borrower The borrower.
      * @return A set of loans associated with the specified borrower.
      */
-    Set<Loan> findAllByBorrowerId(int borrowerId);
+    Set<Loan> findAllByBorrower(User borrower);
 
     /**
      * Finds loans by the book's ID.

@@ -3,6 +3,7 @@ package com.sangarius.oop.library.persistence.repository.impl.json;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.sangarius.oop.library.persistence.entity.impl.Loan;
+import com.sangarius.oop.library.persistence.entity.impl.User;
 import com.sangarius.oop.library.persistence.repository.contracts.LoanRepository;
 
 import java.time.LocalDate;
@@ -25,15 +26,15 @@ public class LoanJsonRepositoryImpl extends GenericJsonRepository<Loan> implemen
     }
 
     /**
-     * Finds all loans by borrower ID.
+     * Finds all loans by borrower.
      *
-     * @param borrowerId The ID of the borrower.
+     * @param borrower The borrower.
      * @return A set of loans associated with the specified borrower.
      */
     @Override
-    public Set<Loan> findAllByBorrowerId(int borrowerId) {
+    public Set<Loan> findAllByBorrower(User borrower) {
         return entities.stream()
-            .filter(loan -> borrowerId == loan.getBorrowerId().hashCode())
+            .filter(loan -> borrower.equals(loan.getBorrower()))
             .collect(Collectors.toSet());
     }
 

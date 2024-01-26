@@ -1,35 +1,59 @@
 [][
   {
-    "title": "I Sing the Body Electric",
-    "author": "Erica Kunze",
+    "title": "Precious Bane",
+    "author": "Jude Auer",
     "category": {
-      "name": "Fiction narrative",
-      "id": "e6361d4a-ed1e-418e-80d4-3e698e4c6c7c"
+      "name": "Classic",
+      "id": "d2958c18-33b7-4fdb-a348-68eb26496b5b"
+    },
+    "yearPublished": 1846,
+    "reviews": [
+      {
+        "reviewText": "Odit maxime ipsum dicta. Culpa molestias eum explicabo. Ut nemo sunt libero.",
+        "rating": 3,
+        "reviewerId": "0e45627f-8e59-4561-8c55-e4ce2efbbd9e",
+        "bookId": "0104643d-76fd-4518-85bb-bdf2796cc418",
+        "id": "ed447d40-f498-4bb6-8253-5b4f82c44108"
+      }
+    ],
+    "id": "63bef4fa-b135-4e22-af9d-2758beae1cad"
+  },
+  {
+    "title": "The Needle\u0027s Eye",
+    "author": "Sabina Brekke",
+    "category": {
+      "name": "Fanfiction",
+      "id": "d52ca8a9-b69a-4eae-84a8-430dfbe0b0c6"
     },
     "yearPublished": 1815,
-    "reviews": [],
-    "id": "d72e4925-73a4-4a46-bed8-07da65faa934"
+    "reviews": [
+      {
+        "reviewText": "Et rerum id. Soluta voluptas minus esse hic et qui. Voluptatem et cumque.",
+        "rating": 2,
+        "reviewerId": "dda581cd-14a6-4461-80ca-c7924a3af785",
+        "bookId": "3e1fb4b3-aba0-4440-98b9-68019bfa70fc",
+        "id": "69e435bb-9bc6-467a-b49e-da94e63920f8"
+      }
+    ],
+    "id": "77428eec-3f89-46f4-9da2-eb4f0c4feb68"
   },
   {
-    "title": "Sleep the Brave",
-    "author": "Alfred Beer",
+    "title": "The Millstone",
+    "author": "Maricela Ankunding",
     "category": {
-      "name": "Folklore",
-      "id": "61cfc842-39d3-4ff5-8e92-4164fdefdbda"
+      "name": "Horror",
+      "id": "49e5b916-8d35-48dc-8ed2-d560aaff868e"
     },
-    "yearPublished": 1939,
-    "reviews": [],
-    "id": "c8651e77-47c9-4818-8afd-1ed1ed15c87d"
-  },
-  {
-    "title": "A Handful of Dust",
-    "author": "Meaghan Maggio",
-    "category": {
-      "name": "Narrative nonfiction",
-      "id": "5505e3a9-253f-40bb-8a84-9b4942654554"
-    },
-    "yearPublished": 1874,
-    "reviews": [],
-    "id": "20d8d47e-b035-43a2-85db-d3b1ed0b07ce"
+    "yearPublished": 1843,
+    "reviews": [
+      {
+        "reviewText": "Odit maxime ipsum dicta. Culpa molestias eum explicabo. Ut nemo sunt libero.",
+        "rating": 3,
+        "reviewerId": "0e45627f-8e59-4561-8c55-e4ce2efbbd9e",
+        "bookId": "0104643d-76fd-4518-85bb-bdf2796cc418",
+        "id": "ed447d40-f498-4bb6-8253-5b4f82c44108"
+      }
+    ],
+    "id": "ed38e7f3-2c29-4ba9-bbc1-6d0f094a55ad"
   }
 ]

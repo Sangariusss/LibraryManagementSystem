@@ -15,23 +15,23 @@ public class Loan extends Entity {
 
     private LocalDate loanDate;
     private LocalDate dueDate;
-    private UUID borrowerId;
+    private User borrower;
     private Book borrowedBook;
 
     /**
      * Constructs a new Loan with the specified details.
      *
-     * @param id          The ID of the loan.
-     * @param loanDate    The date when the loan was made.
-     * @param dueDate     The due date for returning the book.
-     * @param borrowerId  The ID of the borrower (user).
+     * @param id           The ID of the loan.
+     * @param loanDate     The date when the loan was made.
+     * @param dueDate      The due date for returning the book.
+     * @param borrower     The borrower (user).
      * @param borrowedBook The book being borrowed.
      */
-    public Loan(UUID id, LocalDate loanDate, LocalDate dueDate, UUID borrowerId, Book borrowedBook) {
+    public Loan(UUID id, LocalDate loanDate, LocalDate dueDate, User borrower, Book borrowedBook) {
         super(id);
         this.loanDate = loanDate;
         this.dueDate = dueDate;
-        this.borrowerId = borrowerId;
+        this.borrower = borrower;
         this.borrowedBook = borrowedBook;
         validateLoan();
     }
@@ -77,22 +77,22 @@ public class Loan extends Entity {
     }
 
     /**
-     * Gets the ID of the borrower (user).
+     * Gets the borrower (user).
      *
-     * @return The ID of the borrower (user).
+     * @return The borrower (user).
      */
-    public UUID getBorrowerId() {
-        return borrowerId;
+    public User getBorrower() {
+        return borrower;
     }
 
     /**
-     * Sets the ID of the borrower (user).
+     * Sets the borrower (user).
      *
-     * @param borrowerId The new ID of the borrower (user).
+     * @param borrower The new borrower (user).
      */
-    public void setBorrowerId(UUID borrowerId) {
-        this.borrowerId = borrowerId;
-        validateBorrowerId();
+    public void setBorrower(User borrower) {
+        this.borrower = borrower;
+        validateBorrower();
     }
 
     /**
@@ -120,7 +120,7 @@ public class Loan extends Entity {
     private void validateLoan() {
         validateLoanDate();
         validateDueDate();
-        validateBorrowerId();
+        validateBorrower();
 
         if (!this.errors.isEmpty()) {
             throw new EntityArgumentException(errors);
@@ -143,10 +143,10 @@ public class Loan extends Entity {
         }
     }
 
-    private void validateBorrowerId() {
-        final String templateName = "Borrower ID";
+    private void validateBorrower() {
+        final String templateName = "Borrower";
 
-        if (borrowerId == null) {
+        if (borrower == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }
@@ -198,7 +198,7 @@ public class Loan extends Entity {
             "id=" + id +
             ", loanDate=" + loanDate +
             ", dueDate=" + dueDate +
-            ", borrowerId=" + borrowerId +
+            ", borrower=" + borrower +
             ", borrowedBook=" + borrowedBook +
             '}';
     }

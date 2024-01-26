@@ -2,17 +2,28 @@ package com.sangarius.oop.library.service.generator;
 
 import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.entity.impl.Category;
+import com.sangarius.oop.library.persistence.entity.impl.Review;
 import com.github.javafaker.Faker;
 
+import com.sangarius.oop.library.persistence.entity.impl.User;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
 public class BookGenerator {
 
-    public static Set<Book> generateBooks(int count) {
+    private static final Faker faker = new Faker();
+
+    /**
+     * Generates a set of books with associated reviews.
+     *
+     * @param count           The number of books to generate.
+     * @return A set of generated books.
+     */
+    public static Set<Book> generateBooks(int count, Set<User> users, Set<Review> reviews) {
         Set<Book> books = new HashSet<>();
-        Faker faker = new Faker();
 
         for (int i = 0; i < count; i++) {
             UUID bookId = UUID.randomUUID();
@@ -22,8 +33,12 @@ public class BookGenerator {
             UUID categoryId = UUID.randomUUID();
             Category category = new Category(categoryId, categoryName);
             int yearPublished = faker.number().numberBetween(1800, 2022);
+            Review randomReview = getRandomReview(reviews);
 
             Book book = new Book(bookId, title, author, category, yearPublished);
+
+            book.addReview(randomReview);
+
             books.add(book);
         }
 
@@ -38,5 +53,11 @@ public class BookGenerator {
         }
 
         return uniqueTitle[0];
+    }
+
+    private static Review getRandomReview(Set<Review> reviews) {
+        List<Review> reviewList = new ArrayList<>(reviews);
+        int randomIndex = faker.number().numberBetween(0, reviews.size());
+        return reviewList.get(randomIndex);
     }
 }

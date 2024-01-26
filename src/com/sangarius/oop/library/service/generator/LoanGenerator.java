@@ -26,7 +26,7 @@ public class LoanGenerator {
             User borrower = getRandomUser(users);
             Book borrowedBook = getRandomAvailableBook(availableBooks);
 
-            Loan loan = new Loan(loanId, loanDate, dueDate, borrower.getId(), borrowedBook);
+            Loan loan = new Loan(loanId, loanDate, dueDate, borrower, borrowedBook);
             loans.add(loan);
         }
 

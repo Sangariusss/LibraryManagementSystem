@@ -49,7 +49,7 @@ public class Main {
 
         // Book-related operations
         BookRepositoryService bookService = new BookRepositoryService(jsonRepositoryFactory.getBookRepository());
-        Set<Book> books = BookGenerator.generateBooks(3);
+        Set<Book> books = BookGenerator.generateBooks(3, users, reviews);
         bookService.processBooksAndCommit(books);
 
         // Loan-related operations

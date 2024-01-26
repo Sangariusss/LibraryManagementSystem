@@ -7,6 +7,7 @@ import com.sangarius.oop.library.persistence.exception.EntityArgumentException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -118,21 +119,21 @@ public class Book extends Entity {
     }
 
     /**
-     * Gets the list of reviews for the book.
-     *
-     * @return The list of reviews for the book.
-     */
-    public List<Review> getReviews() {
-        return reviews;
-    }
-
-    /**
      * Adds a review to the list of reviews for the book.
      *
      * @param review The review to be added.
      */
     public void addReview(Review review) {
         reviews.add(review);
+    }
+
+    /**
+     * Sets the set of reviews for the book.
+     *
+     * @param reviews The set of reviews to set.
+     */
+    public void setReviews(Set<Review> reviews) {
+        this.reviews = new ArrayList<>(reviews);
     }
 
     /**
