@@ -1,332 +1,992 @@
 [][
   {
-    "name": "Rosenbaum, Pfeffer and Armstrong",
-    "address": "46595 Olson Loaf, Rempelborough, MN 79391-3535",
-    "email": "emma.upton@gmail.com",
+    "name": "Hansen and Sons",
+    "address": "Apt. 267 698 Spinka Spur, Kristenberg, MD 27737-7860",
+    "email": "samuel.kautzer@hotmail.com",
     "books": [
       {
-        "title": "The Doors of Perception",
-        "author": "Cornelius Brekke",
+        "title": "The Torment of Others",
+        "author": "Lavone Leffler",
         "category": {
-          "name": "Suspense/Thriller",
-          "id": "4f218d50-bf2e-403f-9dee-84c07d16425b"
+          "name": "Speech",
+          "id": "690c3ab4-a7ab-48a5-a0f2-37b0b08659ce"
         },
-        "yearPublished": 1918,
+        "yearPublished": 2007,
         "reviews": [
           {
-            "reviewText": "Qui quam neque. Eum adipisci quia consequatur aliquid reiciendis dolor. Quisquam minima pariatur ducimus. Beatae eligendi dolorem dolorum voluptatem eveniet. Dolorem recusandae sunt officiis quasi non officia.",
+            "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
+            "rating": 1,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+            "id": "197b4a84-c172-4556-b900-18d192fe578a"
+          }
+        ],
+        "id": "c5b5b5d2-1901-4eff-9dec-92faacb4c96e"
+      },
+      {
+        "title": "Blood\u0027s a Rover",
+        "author": "Rudy Thiel",
+        "category": {
+          "name": "Essay",
+          "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+        },
+        "yearPublished": 1884,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
             "rating": 2,
-            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-            "bookId": "54609290-7140-420a-90bc-1416036d8056",
-            "id": "6ac3313a-10ff-4374-b935-c302e70169ee"
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
           }
         ],
-        "id": "16a6af04-f3f0-4cba-972b-f04d27c58fcc"
+        "id": "496e0c95-696d-429f-840d-104f5f78c274"
       },
       {
-        "title": "Fair Stood the Wind for France",
-        "author": "Ranee Baumbach",
+        "title": "The Moon by Night",
+        "author": "Kris Marvin",
         "category": {
-          "name": "Mythopoeia",
-          "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          "name": "Metafiction",
+          "id": "ed93650e-41e9-43d1-8b44-c82505cccfae"
         },
-        "yearPublished": 1980,
+        "yearPublished": 1943,
         "reviews": [
           {
-            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-            "rating": 1,
-            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
-          }
-        ],
-        "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
-      },
-      {
-        "title": "Quo Vadis",
-        "author": "Lorine Hermiston",
-        "category": {
-          "name": "Short story",
-          "id": "6cda50e7-ef6d-4429-a74e-46f417679c11"
-        },
-        "yearPublished": 1915,
-        "reviews": [
-          {
-            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-            "rating": 1,
-            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
-          }
-        ],
-        "id": "ebd8f5dd-7f39-4450-bf58-e96e95278180"
-      },
-      {
-        "title": "The Doors of Perception",
-        "author": "Cornelius Brekke",
-        "category": {
-          "name": "Suspense/Thriller",
-          "id": "4f218d50-bf2e-403f-9dee-84c07d16425b"
-        },
-        "yearPublished": 1918,
-        "reviews": [
-          {
-            "reviewText": "Qui quam neque. Eum adipisci quia consequatur aliquid reiciendis dolor. Quisquam minima pariatur ducimus. Beatae eligendi dolorem dolorum voluptatem eveniet. Dolorem recusandae sunt officiis quasi non officia.",
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
             "rating": 2,
-            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-            "bookId": "54609290-7140-420a-90bc-1416036d8056",
-            "id": "6ac3313a-10ff-4374-b935-c302e70169ee"
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
           }
         ],
-        "id": "16a6af04-f3f0-4cba-972b-f04d27c58fcc"
+        "id": "f7c376d5-ad1b-404a-ac7f-333cd0aec4f7"
       },
       {
-        "title": "Fair Stood the Wind for France",
-        "author": "Ranee Baumbach",
+        "title": "The Torment of Others",
+        "author": "Lavone Leffler",
         "category": {
-          "name": "Mythopoeia",
-          "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+          "name": "Speech",
+          "id": "690c3ab4-a7ab-48a5-a0f2-37b0b08659ce"
         },
-        "yearPublished": 1980,
+        "yearPublished": 2007,
         "reviews": [
           {
-            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+            "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
             "rating": 1,
-            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+            "id": "197b4a84-c172-4556-b900-18d192fe578a"
           }
         ],
-        "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+        "id": "c5b5b5d2-1901-4eff-9dec-92faacb4c96e"
       },
       {
-        "title": "Quo Vadis",
-        "author": "Lorine Hermiston",
+        "title": "Blood\u0027s a Rover",
+        "author": "Rudy Thiel",
         "category": {
-          "name": "Short story",
-          "id": "6cda50e7-ef6d-4429-a74e-46f417679c11"
+          "name": "Essay",
+          "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
         },
-        "yearPublished": 1915,
+        "yearPublished": 1884,
         "reviews": [
           {
-            "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-            "rating": 1,
-            "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-            "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-            "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
           }
         ],
-        "id": "ebd8f5dd-7f39-4450-bf58-e96e95278180"
+        "id": "496e0c95-696d-429f-840d-104f5f78c274"
+      },
+      {
+        "title": "The Moon by Night",
+        "author": "Kris Marvin",
+        "category": {
+          "name": "Metafiction",
+          "id": "ed93650e-41e9-43d1-8b44-c82505cccfae"
+        },
+        "yearPublished": 1943,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "f7c376d5-ad1b-404a-ac7f-333cd0aec4f7"
       }
     ],
     "users": [
       {
-        "email": "dexter.tremblay@hotmail.com",
-        "name": "Oswaldo Fahey",
-        "id": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef"
+        "email": "haydee.schuster@yahoo.com",
+        "name": "Ms. Jacqualine Lang",
+        "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
       },
       {
-        "email": "holly.torp@hotmail.com",
-        "name": "Merissa Lind",
-        "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+        "email": "malissa.muller@yahoo.com",
+        "name": "Robby Lynch MD",
+        "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
       },
       {
-        "email": "fred.conn@hotmail.com",
-        "name": "Bridgett Runte",
-        "id": "827530a8-f116-400c-b096-ae95945ae086"
+        "email": "devon.labadie@gmail.com",
+        "name": "Isiah Miller",
+        "id": "87087e59-3b68-4c0d-b7b2-c61cb943adb5"
       },
       {
-        "email": "dexter.tremblay@hotmail.com",
-        "name": "Oswaldo Fahey",
-        "id": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef"
+        "email": "haydee.schuster@yahoo.com",
+        "name": "Ms. Jacqualine Lang",
+        "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
       },
       {
-        "email": "holly.torp@hotmail.com",
-        "name": "Merissa Lind",
-        "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+        "email": "malissa.muller@yahoo.com",
+        "name": "Robby Lynch MD",
+        "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
       },
       {
-        "email": "fred.conn@hotmail.com",
-        "name": "Bridgett Runte",
-        "id": "827530a8-f116-400c-b096-ae95945ae086"
+        "email": "devon.labadie@gmail.com",
+        "name": "Isiah Miller",
+        "id": "87087e59-3b68-4c0d-b7b2-c61cb943adb5"
       }
     ],
     "loans": [
       {
-        "loanDate": "20-01-2024",
-        "dueDate": "30-01-2024",
+        "loanDate": "18-01-2024",
+        "dueDate": "12-02-2024",
         "borrower": {
-          "email": "holly.torp@hotmail.com",
-          "name": "Merissa Lind",
-          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
         },
         "borrowedBook": {
-          "title": "Fair Stood the Wind for France",
-          "author": "Ranee Baumbach",
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
           "category": {
-            "name": "Mythopoeia",
-            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
           },
-          "yearPublished": 1980,
+          "yearPublished": 1884,
           "reviews": [
             {
-              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-              "rating": 1,
-              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
             }
           ],
-          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
         },
-        "id": "fa809aef-694a-4923-af19-e9b76014ad76"
+        "id": "c7e7b062-d72e-4469-88d5-6df91b3c69a5"
       },
       {
-        "loanDate": "03-01-2024",
+        "loanDate": "31-12-2023",
         "dueDate": "24-01-2024",
         "borrower": {
-          "email": "holly.torp@hotmail.com",
-          "name": "Merissa Lind",
-          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
         },
         "borrowedBook": {
-          "title": "Fair Stood the Wind for France",
-          "author": "Ranee Baumbach",
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
           "category": {
-            "name": "Mythopoeia",
-            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
           },
-          "yearPublished": 1980,
+          "yearPublished": 1884,
           "reviews": [
             {
-              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-              "rating": 1,
-              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
             }
           ],
-          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
         },
-        "id": "ae007891-e016-4d29-96e4-9de4b41507d0"
+        "id": "935fa7e2-7225-4098-b064-9bbf6e18247a"
       },
       {
-        "loanDate": "11-01-2024",
-        "dueDate": "18-01-2024",
+        "loanDate": "22-01-2024",
+        "dueDate": "15-02-2024",
         "borrower": {
-          "email": "fred.conn@hotmail.com",
-          "name": "Bridgett Runte",
-          "id": "827530a8-f116-400c-b096-ae95945ae086"
+          "email": "haydee.schuster@yahoo.com",
+          "name": "Ms. Jacqualine Lang",
+          "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
         },
         "borrowedBook": {
-          "title": "Fair Stood the Wind for France",
-          "author": "Ranee Baumbach",
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
           "category": {
-            "name": "Mythopoeia",
-            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
           },
-          "yearPublished": 1980,
+          "yearPublished": 1884,
           "reviews": [
             {
-              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-              "rating": 1,
-              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
             }
           ],
-          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
         },
-        "id": "f2b17cdc-83f2-42f5-b825-6ae17f7b318c"
+        "id": "0d90e079-9203-4363-a48f-ba9625bafaec"
       },
       {
-        "loanDate": "20-01-2024",
-        "dueDate": "30-01-2024",
+        "loanDate": "18-01-2024",
+        "dueDate": "12-02-2024",
         "borrower": {
-          "email": "holly.torp@hotmail.com",
-          "name": "Merissa Lind",
-          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
         },
         "borrowedBook": {
-          "title": "Fair Stood the Wind for France",
-          "author": "Ranee Baumbach",
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
           "category": {
-            "name": "Mythopoeia",
-            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
           },
-          "yearPublished": 1980,
+          "yearPublished": 1884,
           "reviews": [
             {
-              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-              "rating": 1,
-              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
             }
           ],
-          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
         },
-        "id": "fa809aef-694a-4923-af19-e9b76014ad76"
+        "id": "c7e7b062-d72e-4469-88d5-6df91b3c69a5"
       },
       {
-        "loanDate": "03-01-2024",
+        "loanDate": "31-12-2023",
         "dueDate": "24-01-2024",
         "borrower": {
-          "email": "holly.torp@hotmail.com",
-          "name": "Merissa Lind",
-          "id": "fb1265d4-5a72-42ef-8c0e-a795cb97352e"
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
         },
         "borrowedBook": {
-          "title": "Fair Stood the Wind for France",
-          "author": "Ranee Baumbach",
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
           "category": {
-            "name": "Mythopoeia",
-            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
           },
-          "yearPublished": 1980,
+          "yearPublished": 1884,
           "reviews": [
             {
-              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-              "rating": 1,
-              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
             }
           ],
-          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
         },
-        "id": "ae007891-e016-4d29-96e4-9de4b41507d0"
+        "id": "935fa7e2-7225-4098-b064-9bbf6e18247a"
       },
       {
-        "loanDate": "11-01-2024",
-        "dueDate": "18-01-2024",
+        "loanDate": "22-01-2024",
+        "dueDate": "15-02-2024",
         "borrower": {
-          "email": "fred.conn@hotmail.com",
-          "name": "Bridgett Runte",
-          "id": "827530a8-f116-400c-b096-ae95945ae086"
+          "email": "haydee.schuster@yahoo.com",
+          "name": "Ms. Jacqualine Lang",
+          "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
         },
         "borrowedBook": {
-          "title": "Fair Stood the Wind for France",
-          "author": "Ranee Baumbach",
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
           "category": {
-            "name": "Mythopoeia",
-            "id": "bcb7e4be-4222-4d2a-aff3-fe98d3edbe93"
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
           },
-          "yearPublished": 1980,
+          "yearPublished": 1884,
           "reviews": [
             {
-              "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
-              "rating": 1,
-              "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-              "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-              "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
             }
           ],
-          "id": "173c57bf-01b9-4426-8abd-45e2a5629405"
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
         },
-        "id": "f2b17cdc-83f2-42f5-b825-6ae17f7b318c"
+        "id": "0d90e079-9203-4363-a48f-ba9625bafaec"
       }
     ],
-    "id": "ca1f490c-f95e-46b9-a61c-b0229737325d"
+    "id": "2baf73a5-faeb-47b3-856e-5a2fdfb5a339"
+  },
+  {
+    "name": "Paucek Group",
+    "address": "Apt. 817 6243 Antione Prairie, Bechtelarstad, FL 31435-5907",
+    "email": "mitchell.collier@gmail.com",
+    "books": [
+      {
+        "title": "The Torment of Others",
+        "author": "Lavone Leffler",
+        "category": {
+          "name": "Speech",
+          "id": "690c3ab4-a7ab-48a5-a0f2-37b0b08659ce"
+        },
+        "yearPublished": 2007,
+        "reviews": [
+          {
+            "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
+            "rating": 1,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+            "id": "197b4a84-c172-4556-b900-18d192fe578a"
+          }
+        ],
+        "id": "c5b5b5d2-1901-4eff-9dec-92faacb4c96e"
+      },
+      {
+        "title": "Blood\u0027s a Rover",
+        "author": "Rudy Thiel",
+        "category": {
+          "name": "Essay",
+          "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+        },
+        "yearPublished": 1884,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "496e0c95-696d-429f-840d-104f5f78c274"
+      },
+      {
+        "title": "The Moon by Night",
+        "author": "Kris Marvin",
+        "category": {
+          "name": "Metafiction",
+          "id": "ed93650e-41e9-43d1-8b44-c82505cccfae"
+        },
+        "yearPublished": 1943,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "f7c376d5-ad1b-404a-ac7f-333cd0aec4f7"
+      },
+      {
+        "title": "The Torment of Others",
+        "author": "Lavone Leffler",
+        "category": {
+          "name": "Speech",
+          "id": "690c3ab4-a7ab-48a5-a0f2-37b0b08659ce"
+        },
+        "yearPublished": 2007,
+        "reviews": [
+          {
+            "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
+            "rating": 1,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+            "id": "197b4a84-c172-4556-b900-18d192fe578a"
+          }
+        ],
+        "id": "c5b5b5d2-1901-4eff-9dec-92faacb4c96e"
+      },
+      {
+        "title": "Blood\u0027s a Rover",
+        "author": "Rudy Thiel",
+        "category": {
+          "name": "Essay",
+          "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+        },
+        "yearPublished": 1884,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "496e0c95-696d-429f-840d-104f5f78c274"
+      },
+      {
+        "title": "The Moon by Night",
+        "author": "Kris Marvin",
+        "category": {
+          "name": "Metafiction",
+          "id": "ed93650e-41e9-43d1-8b44-c82505cccfae"
+        },
+        "yearPublished": 1943,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "f7c376d5-ad1b-404a-ac7f-333cd0aec4f7"
+      }
+    ],
+    "users": [
+      {
+        "email": "haydee.schuster@yahoo.com",
+        "name": "Ms. Jacqualine Lang",
+        "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+      },
+      {
+        "email": "malissa.muller@yahoo.com",
+        "name": "Robby Lynch MD",
+        "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+      },
+      {
+        "email": "devon.labadie@gmail.com",
+        "name": "Isiah Miller",
+        "id": "87087e59-3b68-4c0d-b7b2-c61cb943adb5"
+      },
+      {
+        "email": "haydee.schuster@yahoo.com",
+        "name": "Ms. Jacqualine Lang",
+        "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+      },
+      {
+        "email": "malissa.muller@yahoo.com",
+        "name": "Robby Lynch MD",
+        "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+      },
+      {
+        "email": "devon.labadie@gmail.com",
+        "name": "Isiah Miller",
+        "id": "87087e59-3b68-4c0d-b7b2-c61cb943adb5"
+      }
+    ],
+    "loans": [
+      {
+        "loanDate": "18-01-2024",
+        "dueDate": "12-02-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "c7e7b062-d72e-4469-88d5-6df91b3c69a5"
+      },
+      {
+        "loanDate": "31-12-2023",
+        "dueDate": "24-01-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "935fa7e2-7225-4098-b064-9bbf6e18247a"
+      },
+      {
+        "loanDate": "22-01-2024",
+        "dueDate": "15-02-2024",
+        "borrower": {
+          "email": "haydee.schuster@yahoo.com",
+          "name": "Ms. Jacqualine Lang",
+          "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "0d90e079-9203-4363-a48f-ba9625bafaec"
+      },
+      {
+        "loanDate": "18-01-2024",
+        "dueDate": "12-02-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "c7e7b062-d72e-4469-88d5-6df91b3c69a5"
+      },
+      {
+        "loanDate": "31-12-2023",
+        "dueDate": "24-01-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "935fa7e2-7225-4098-b064-9bbf6e18247a"
+      },
+      {
+        "loanDate": "22-01-2024",
+        "dueDate": "15-02-2024",
+        "borrower": {
+          "email": "haydee.schuster@yahoo.com",
+          "name": "Ms. Jacqualine Lang",
+          "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "0d90e079-9203-4363-a48f-ba9625bafaec"
+      }
+    ],
+    "id": "ae0db1b4-2535-4c96-b819-9e5bb4079c4c"
+  },
+  {
+    "name": "Hansen LLC",
+    "address": "Suite 536 566 Hansen Extensions, New Careyview, MI 18543-2312",
+    "email": "shirley.lang@hotmail.com",
+    "books": [
+      {
+        "title": "The Torment of Others",
+        "author": "Lavone Leffler",
+        "category": {
+          "name": "Speech",
+          "id": "690c3ab4-a7ab-48a5-a0f2-37b0b08659ce"
+        },
+        "yearPublished": 2007,
+        "reviews": [
+          {
+            "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
+            "rating": 1,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+            "id": "197b4a84-c172-4556-b900-18d192fe578a"
+          }
+        ],
+        "id": "c5b5b5d2-1901-4eff-9dec-92faacb4c96e"
+      },
+      {
+        "title": "Blood\u0027s a Rover",
+        "author": "Rudy Thiel",
+        "category": {
+          "name": "Essay",
+          "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+        },
+        "yearPublished": 1884,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "496e0c95-696d-429f-840d-104f5f78c274"
+      },
+      {
+        "title": "The Moon by Night",
+        "author": "Kris Marvin",
+        "category": {
+          "name": "Metafiction",
+          "id": "ed93650e-41e9-43d1-8b44-c82505cccfae"
+        },
+        "yearPublished": 1943,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "f7c376d5-ad1b-404a-ac7f-333cd0aec4f7"
+      },
+      {
+        "title": "The Torment of Others",
+        "author": "Lavone Leffler",
+        "category": {
+          "name": "Speech",
+          "id": "690c3ab4-a7ab-48a5-a0f2-37b0b08659ce"
+        },
+        "yearPublished": 2007,
+        "reviews": [
+          {
+            "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
+            "rating": 1,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+            "id": "197b4a84-c172-4556-b900-18d192fe578a"
+          }
+        ],
+        "id": "c5b5b5d2-1901-4eff-9dec-92faacb4c96e"
+      },
+      {
+        "title": "Blood\u0027s a Rover",
+        "author": "Rudy Thiel",
+        "category": {
+          "name": "Essay",
+          "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+        },
+        "yearPublished": 1884,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "496e0c95-696d-429f-840d-104f5f78c274"
+      },
+      {
+        "title": "The Moon by Night",
+        "author": "Kris Marvin",
+        "category": {
+          "name": "Metafiction",
+          "id": "ed93650e-41e9-43d1-8b44-c82505cccfae"
+        },
+        "yearPublished": 1943,
+        "reviews": [
+          {
+            "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+            "rating": 2,
+            "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+            "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+            "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+          }
+        ],
+        "id": "f7c376d5-ad1b-404a-ac7f-333cd0aec4f7"
+      }
+    ],
+    "users": [
+      {
+        "email": "haydee.schuster@yahoo.com",
+        "name": "Ms. Jacqualine Lang",
+        "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+      },
+      {
+        "email": "malissa.muller@yahoo.com",
+        "name": "Robby Lynch MD",
+        "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+      },
+      {
+        "email": "devon.labadie@gmail.com",
+        "name": "Isiah Miller",
+        "id": "87087e59-3b68-4c0d-b7b2-c61cb943adb5"
+      },
+      {
+        "email": "haydee.schuster@yahoo.com",
+        "name": "Ms. Jacqualine Lang",
+        "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+      },
+      {
+        "email": "malissa.muller@yahoo.com",
+        "name": "Robby Lynch MD",
+        "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+      },
+      {
+        "email": "devon.labadie@gmail.com",
+        "name": "Isiah Miller",
+        "id": "87087e59-3b68-4c0d-b7b2-c61cb943adb5"
+      }
+    ],
+    "loans": [
+      {
+        "loanDate": "18-01-2024",
+        "dueDate": "12-02-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "c7e7b062-d72e-4469-88d5-6df91b3c69a5"
+      },
+      {
+        "loanDate": "31-12-2023",
+        "dueDate": "24-01-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "935fa7e2-7225-4098-b064-9bbf6e18247a"
+      },
+      {
+        "loanDate": "22-01-2024",
+        "dueDate": "15-02-2024",
+        "borrower": {
+          "email": "haydee.schuster@yahoo.com",
+          "name": "Ms. Jacqualine Lang",
+          "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "0d90e079-9203-4363-a48f-ba9625bafaec"
+      },
+      {
+        "loanDate": "18-01-2024",
+        "dueDate": "12-02-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "c7e7b062-d72e-4469-88d5-6df91b3c69a5"
+      },
+      {
+        "loanDate": "31-12-2023",
+        "dueDate": "24-01-2024",
+        "borrower": {
+          "email": "malissa.muller@yahoo.com",
+          "name": "Robby Lynch MD",
+          "id": "8764535d-665b-49fb-a531-6acb817a6d2c"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "935fa7e2-7225-4098-b064-9bbf6e18247a"
+      },
+      {
+        "loanDate": "22-01-2024",
+        "dueDate": "15-02-2024",
+        "borrower": {
+          "email": "haydee.schuster@yahoo.com",
+          "name": "Ms. Jacqualine Lang",
+          "id": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2"
+        },
+        "borrowedBook": {
+          "title": "Blood\u0027s a Rover",
+          "author": "Rudy Thiel",
+          "category": {
+            "name": "Essay",
+            "id": "724efdce-fa68-420a-a0d8-df3ca85929b3"
+          },
+          "yearPublished": 1884,
+          "reviews": [
+            {
+              "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+              "rating": 2,
+              "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+              "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+              "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+            }
+          ],
+          "id": "496e0c95-696d-429f-840d-104f5f78c274"
+        },
+        "id": "0d90e079-9203-4363-a48f-ba9625bafaec"
+      }
+    ],
+    "id": "f5703971-b806-46f5-b74e-ee1cfc466710"
   }
 ]

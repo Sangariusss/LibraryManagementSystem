@@ -1,23 +1,23 @@
 [][
   {
-    "reviewText": "Sit perspiciatis magni numquam nobis. Magnam molestiae veniam eveniet autem. Sit provident ab accusamus quas numquam voluptas.",
-    "rating": 4,
-    "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-    "bookId": "2027708c-70b1-4882-875a-6c33be06d39d",
-    "id": "b0e9a3a2-14bf-4ba7-949c-50b16a342939"
-  },
-  {
-    "reviewText": "Qui quam neque. Eum adipisci quia consequatur aliquid reiciendis dolor. Quisquam minima pariatur ducimus. Beatae eligendi dolorem dolorum voluptatem eveniet. Dolorem recusandae sunt officiis quasi non officia.",
-    "rating": 2,
-    "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-    "bookId": "54609290-7140-420a-90bc-1416036d8056",
-    "id": "6ac3313a-10ff-4374-b935-c302e70169ee"
-  },
-  {
-    "reviewText": "Qui qui dolores. Tenetur incidunt quibusdam eveniet illo. Quia repellendus odio aspernatur quaerat.",
+    "reviewText": "Eum ut in repellat. Sequi culpa laudantium error. Animi dolore sit.",
     "rating": 1,
-    "reviewerId": "2ef8143b-5c8f-40c1-b09b-ee8f13b3a7ef",
-    "bookId": "0da0f4dc-c665-4464-8a49-59fb510d6b58",
-    "id": "48922806-9f1c-475c-8612-0379e6bb1e8c"
+    "reviewerId": "87087e59-3b68-4c0d-b7b2-c61cb943adb5",
+    "bookId": "670594b7-cb42-4f9b-a0c1-1da54c584728",
+    "id": "c59507c6-d804-4518-bb4f-59fc9c406767"
+  },
+  {
+    "reviewText": "Sequi omnis porro. Sunt illo et. Dolores dolorem explicabo repellendus placeat id rerum et.",
+    "rating": 2,
+    "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+    "bookId": "f7beb5e9-ba22-487a-8837-073005f35128",
+    "id": "c8d93c7c-b5b0-4907-929f-b501337f0d7f"
+  },
+  {
+    "reviewText": "Quia numquam rem quo dolorum natus illo. Harum aspernatur a amet ab. Reiciendis quibusdam accusamus cupiditate quasi.",
+    "rating": 1,
+    "reviewerId": "98c2cd02-3a62-4b19-b5d9-94b30dd319e2",
+    "bookId": "024b3208-af9c-4278-872c-8e733b3326b3",
+    "id": "197b4a84-c172-4556-b900-18d192fe578a"
   }
 ]

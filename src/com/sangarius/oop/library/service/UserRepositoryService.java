@@ -23,8 +23,6 @@ public class UserRepositoryService {
         for (User user : users) {
             userRepository.add(user);
         }
-
-        printAllUsers();
     }
 
 

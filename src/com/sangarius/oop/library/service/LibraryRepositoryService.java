@@ -32,8 +32,6 @@ public class LibraryRepositoryService {
             // Add the library to the repository
             libraryRepository.add(library);
         }
-
-        printAllLibraries();
     }
 
     private void printAllLibraries() {

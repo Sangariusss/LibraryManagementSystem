@@ -18,8 +18,6 @@ public class BookRepositoryService {
         for (Book book : books) {
             bookRepository.add(book);
         }
-
-        printAllBooks();
     }
 
     private void printAllBooks() {

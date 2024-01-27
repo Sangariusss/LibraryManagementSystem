@@ -17,8 +17,6 @@ public class ReviewRepositoryService {
         for (Review review : reviews) {
             reviewRepository.add(review);
         }
-
-        printAllReviews();
     }
 
     private void printAllReviews() {

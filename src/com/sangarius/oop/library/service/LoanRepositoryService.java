@@ -24,8 +24,6 @@ public class LoanRepositoryService {
         for (Loan loan : loans) {
             loanRepository.add(loan);
         }
-
-        printAllLoans();
     }
 
     private void printAllLoans() {

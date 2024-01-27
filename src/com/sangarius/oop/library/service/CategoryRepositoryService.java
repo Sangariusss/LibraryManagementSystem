@@ -22,8 +22,6 @@ public class CategoryRepositoryService {
         for (Category category : categories) {
             categoryRepository.add(category);
         }
-
-        printAllCategories();
     }
 
     private void printAllCategories() {
