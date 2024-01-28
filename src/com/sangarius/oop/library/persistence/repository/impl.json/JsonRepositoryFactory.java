@@ -112,7 +112,7 @@ public class JsonRepositoryFactory extends RepositoryFactory {
     private <E extends Entity> void serializeEntities(Path path, Set<E> entities) {
         try (FileWriter writer = new FileWriter(path.toFile())) {
             // Clear the file content before saving!
-            writer.write("[]");
+            writer.write("");
             // Convert the collection of entities to JSON and write to the file
             gson.toJson(entities, writer);
 

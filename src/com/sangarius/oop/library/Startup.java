@@ -23,6 +23,7 @@ import com.sangarius.oop.library.persistence.entity.impl.Loan;
 
 import java.io.IOException;
 import java.util.Set;
+import org.fusesource.jansi.AnsiConsole;
 
 final class Startup {
 
@@ -69,6 +70,7 @@ final class Startup {
 
         // Call the render() method from the ConsoleUI class to display the console interface
         try {
+            ConsoleUI.printWelcome();
             ConsoleUI consoleUI = new ConsoleUI();
             consoleUI.render();
         } catch (IOException e) {

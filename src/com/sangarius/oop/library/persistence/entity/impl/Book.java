@@ -142,9 +142,6 @@ public class Book extends Entity {
      * @return {@code true} if the book is available, {@code false} otherwise.
      */
     public boolean isAvailable() {
-        // In this example, let's assume a simple availability check based on reviews.
-        // You can customize this logic based on your specific requirements.
-
         // If there are no reviews or all reviews have a positive rating, consider the book available.
         return reviews.isEmpty() || reviews.stream().allMatch(review -> review.getRating() > 0);
     }

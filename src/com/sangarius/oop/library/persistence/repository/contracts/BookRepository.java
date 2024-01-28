@@ -4,7 +4,6 @@ import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.repository.Repository;
 
 import java.util.Set;
-import java.util.UUID;
 
 public interface BookRepository extends Repository<Book> {
 

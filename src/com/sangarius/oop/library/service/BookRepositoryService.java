@@ -4,7 +4,6 @@ import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.repository.contracts.BookRepository;
 
 import java.util.Set;
-import java.util.UUID;
 
 public class BookRepositoryService {
 
