@@ -1,218 +1,26 @@
 [
   {
-    "name": "Fiction in verse",
-    "id": "9347b5d9-f03d-4cdc-9766-31b96b6bd66b"
-  },
-  {
-    "name": "Short story",
-    "id": "a45d1cf7-c974-4801-8b7e-b66e7fb538da"
-  },
-  {
-    "name": "Science fiction",
-    "id": "424ca4f0-9631-4c85-a7e4-94f899ff72ce"
-  },
-  {
-    "name": "Realistic fiction",
-    "id": "9dedb739-5564-450b-94ad-87d50af07758"
-  },
-  {
-    "name": "Mystery",
-    "id": "33d60525-cb20-46bd-8931-c31b8a4fa7e5"
-  },
-  {
-    "name": "Reference book",
-    "id": "16bca713-7cbd-41a9-a65c-c1243113a321"
-  },
-  {
-    "name": "Folklore",
-    "id": "7a752f04-0511-4f35-ba45-ac1b4478f000"
-  },
-  {
-    "name": "Fanfiction",
-    "id": "da1379ce-6c6e-456d-b27f-c6540c468ecf"
-  },
-  {
-    "name": "Horror",
-    "id": "39d3a753-2a6a-4e99-b575-37c4f0e69e14"
-  },
-  {
-    "name": "Fable",
-    "id": "a12c9742-22a8-4cc8-8107-56e00037a364"
-  },
-  {
-    "name": "Speech",
-    "id": "1e39f8f6-b16d-4730-baa2-5a60644fcf22"
-  },
-  {
-    "name": "Textbook",
-    "id": "1dcf5448-e96e-49cc-9a53-a04e66e5f9a7"
-  },
-  {
-    "name": "Fiction narrative",
-    "id": "69ba4e56-3d77-49cd-8a00-b7c11efcecd1"
-  },
-  {
-    "name": "Tall tale",
-    "id": "2d044638-ae84-49b9-b43d-4d02b1cada4f"
-  },
-  {
-    "name": "Tall tale",
-    "id": "e6a3594c-5abd-40af-b519-3f52c33801ce"
-  },
-  {
-    "name": "Realistic fiction",
-    "id": "f7f25e2f-5d45-4ba0-930d-da070ba54690"
-  },
-  {
-    "name": "Folklore",
-    "id": "a88ff14b-04a2-47d0-b740-cb8dca04423e"
-  },
-  {
-    "name": "Crime/Detective",
-    "id": "883be580-926d-4fbb-8349-2097003d2358"
-  },
-  {
     "name": "Metafiction",
-    "id": "cb9f4311-ef9d-4806-b411-538bbdf0822f"
+    "id": "bcc00f1f-ad58-40dc-adbd-60fb1882c250"
   },
   {
     "name": "Suspense/Thriller",
-    "id": "659ec014-0939-4a08-85d4-f8b5d1f1df3c"
+    "id": "8dbe09b9-b1a5-4d17-9532-5af1f2ba1493"
+  },
+  {
+    "name": "Short story",
+    "id": "2ad2734d-1d14-4e4a-8744-46070456997e"
+  },
+  {
+    "name": "Suspense/Thriller",
+    "id": "80c4cbd6-1751-4855-b696-49345416e4d8"
+  },
+  {
+    "name": "Fiction in verse",
+    "id": "7bad8e32-c00a-47e2-9873-78379757cf77"
   },
   {
     "name": "Historical fiction",
-    "id": "6e504502-820f-43bb-9ed5-e4f982379fa8"
-  },
-  {
-    "name": "Essay",
-    "id": "a0702179-6b0b-44eb-b9d0-749ac9dd7aa5"
-  },
-  {
-    "name": "Legend",
-    "id": "4f29e918-ce80-4ad1-8d01-881824dd807a"
-  },
-  {
-    "name": "Humor",
-    "id": "5b895f81-10da-4dc1-a661-5295d8b6147d"
-  },
-  {
-    "name": "Legend",
-    "id": "7a52c04a-9fbb-48e2-b18b-3459fcdad72f"
-  },
-  {
-    "name": "Suspense/Thriller",
-    "id": "d9dd8e4b-2a09-4a43-ad3e-758927c0c2c0"
-  },
-  {
-    "name": "Humor",
-    "id": "93a91067-7053-4e4e-80fb-4359c5e270fa"
-  },
-  {
-    "name": "Mythopoeia",
-    "id": "f219b951-85d0-475a-9e98-4c212ef48d60"
-  },
-  {
-    "name": "Science fiction",
-    "id": "b5f0dc67-fb4e-45cf-90c2-e61c5697ef33"
-  },
-  {
-    "name": "Narrative nonfiction",
-    "id": "26c6fb96-3dde-450a-85d0-8c21bf7eca64"
-  },
-  {
-    "name": "Reference book",
-    "id": "5e1d9231-6d3d-482e-a8ba-4a0a515deeff"
-  },
-  {
-    "name": "Metafiction",
-    "id": "939c2b67-74bb-4341-b237-2070cadeae34"
-  },
-  {
-    "name": "Suspense/Thriller",
-    "id": "afe8be55-d627-41c4-a2c4-4459b04ec6a3"
-  },
-  {
-    "name": "Narrative nonfiction",
-    "id": "b388f40f-8255-40eb-99d0-7af66bbafa4b"
-  },
-  {
-    "name": "Folklore",
-    "id": "d2cd1189-7574-4e25-9724-2ef86e77b5cf"
-  },
-  {
-    "name": "Humor",
-    "id": "88a05d4f-6abc-42a0-978e-ca18f4e16c74"
-  },
-  {
-    "name": "Science fiction",
-    "id": "60c472be-a371-46d8-ad76-8644802b19b1"
-  },
-  {
-    "name": "Crime/Detective",
-    "id": "6e002aa1-25e7-4dd0-bd65-0563582475cf"
-  },
-  {
-    "name": "Fantasy",
-    "id": "d6375c68-db02-4fe3-868f-5feac5db34c1"
-  },
-  {
-    "name": "Mythology",
-    "id": "cb2698e2-18a5-474c-af89-775f7ff10d8a"
-  },
-  {
-    "name": "Mystery",
-    "id": "f9991c53-358d-4447-a2cc-eaa946617206"
-  },
-  {
-    "name": "Folklore",
-    "id": "4816983d-3967-49d4-8f8d-c975fb1f33f4"
-  },
-  {
-    "name": "Legend",
-    "id": "defd3005-774e-406c-82c7-d71a3b7604b6"
-  },
-  {
-    "name": "Textbook",
-    "id": "38eb138b-06f8-405b-a12e-629dd25011a6"
-  },
-  {
-    "name": "Mythology",
-    "id": "e16a9102-a590-4e67-894a-116fedd8ebed"
-  },
-  {
-    "name": "Fantasy",
-    "id": "15e84ec2-949f-43e0-9c09-837970a4fd4d"
-  },
-  {
-    "name": "Short story",
-    "id": "4a622f3c-93ed-4083-b931-5ddcc79dd5d7"
-  },
-  {
-    "name": "Mythopoeia",
-    "id": "474b335c-9fca-467d-8a76-6edf1212a708"
-  },
-  {
-    "name": "Mythopoeia",
-    "id": "f13ffea8-2106-401f-85a0-2668e3b59f61"
-  },
-  {
-    "name": "Science fiction",
-    "id": "83def5f8-ea47-43c0-8670-248861b99fbb"
-  },
-  {
-    "name": "Narrative nonfiction",
-    "id": "9d4e896d-a980-4e8a-a7e4-c2d424a6a7eb"
-  },
-  {
-    "name": "Mystery",
-    "id": "fb29974a-296f-4742-ab62-d188cd3758c9"
-  },
-  {
-    "name": "Fairy tale",
-    "id": "34926748-1ef8-49ac-8baa-649fc405dee7"
-  },
-  {
-    "name": "Mythopoeia",
-    "id": "24363c6a-8987-44f9-b0df-bf0d8f13d77a"
+    "id": "65122f5c-728a-4995-bb4e-de8b35d759df"
   }
 ]

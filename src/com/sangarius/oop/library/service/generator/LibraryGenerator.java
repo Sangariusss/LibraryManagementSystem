@@ -11,14 +11,19 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
+/**
+ * Utility class for generating sets of sample libraries.
+ */
 public class LibraryGenerator {
-
     private static final Faker faker = new Faker();
 
     /**
      * Generates a set of sample libraries.
      *
      * @param count The number of libraries to generate.
+     * @param users A set of users to associate with the libraries.
+     * @param books A set of books to associate with the libraries.
+     * @param loans A set of loans to associate with the libraries.
      * @return A set of sample libraries.
      */
     public static Set<Library> generateLibraries(int count, Set<User> users, Set<Book> books, Set<Loan> loans) {

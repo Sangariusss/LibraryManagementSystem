@@ -23,12 +23,14 @@ import com.sangarius.oop.library.persistence.entity.impl.Loan;
 
 import java.io.IOException;
 import java.util.Set;
-import org.fusesource.jansi.AnsiConsole;
 
+/**
+ * The class responsible for initializing the application.
+ */
 final class Startup {
 
     /**
-     * Initializes the application.
+     * Initializes the application by generating sample data, processing it, and displaying the console user interface.
      */
     public static void init() {
         // Create a JSON repository factory

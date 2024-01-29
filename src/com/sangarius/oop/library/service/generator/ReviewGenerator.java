@@ -9,8 +9,18 @@ import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 
+/**
+ * Utility class for generating sets of reviews.
+ */
 public class ReviewGenerator {
 
+    /**
+     * Generates a set of reviews.
+     *
+     * @param count The number of reviews to generate.
+     * @param users A set of users who will be the reviewers.
+     * @return A set of generated reviews.
+     */
     public static Set<Review> generateReviews(int count, Set<User> users) {
         Set<Review> reviews = new HashSet<>();
         Faker faker = new Faker();
@@ -33,6 +43,12 @@ public class ReviewGenerator {
         return reviews;
     }
 
+    /**
+     * Retrieves a random user from the given set of users.
+     *
+     * @param users A set of users.
+     * @return A randomly selected user.
+     */
     private static User getRandomUser(Set<User> users) {
         // Convert Set<User> to array for random access
         User[] usersArray = users.toArray(new User[0]);

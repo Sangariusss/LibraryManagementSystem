@@ -6,15 +6,23 @@ import de.codeshelf.consoleui.prompt.ConsolePrompt;
 import de.codeshelf.consoleui.prompt.ListResult;
 import de.codeshelf.consoleui.prompt.builder.ListPromptBuilder;
 import de.codeshelf.consoleui.prompt.builder.PromptBuilder;
+import org.fusesource.jansi.AnsiConsole;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import org.fusesource.jansi.AnsiConsole;
 
+/**
+ * ConsoleUI class handles rendering the library application interface in the console.
+ */
 public class ConsoleUI implements Renderable {
 
+    /**
+     * Prints the welcome message with ASCII art.
+     */
     public static void printWelcome() {
+        // ASCII art for the welcome message
         String art = " _____                                                _____ \n"
             + "( ___ )----------------------------------------------( ___ )\n"
             + " |   |                                                |   | \n"
@@ -27,6 +35,7 @@ public class ConsoleUI implements Renderable {
             + " |___|                                                |___| \n"
             + "(_____)----------------------------------------------(_____)\n";
 
+        // Print each character of the ASCII art with a slight delay for visual effect
         for (int i = 0; i < art.length(); i++) {
             System.out.print(art.charAt(i));
             try {
@@ -37,12 +46,17 @@ public class ConsoleUI implements Renderable {
         }
     }
 
+    /**
+     * Renders the library application interface in the console.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
     @Override
     public void render() throws IOException {
         // Set up console output with ANSI support
         AnsiConsole.systemInstall();
 
-        // Create an object for interactive actions in the console
+        // Create a console prompt for user interaction
         ConsolePrompt prompt = new ConsolePrompt();
         PromptBuilder promptBuilder = prompt.getPromptBuilder();
 
@@ -89,23 +103,51 @@ public class ConsoleUI implements Renderable {
         AnsiConsole.systemUninstall();
     }
 
-    public static void addBook() {
+    /**
+     * Adds a book to the library.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
+    private void addBook() throws IOException {
+        // Print the list of books
         printBooks();
+
+        // Create a console prompt for user interaction
+        ConsolePrompt prompt = new ConsolePrompt();
+        PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+        // Prompt the user to go back to the main menu
+        var selectedItemResult = promptBuilder.createListPrompt()
+            .newItem("BACK").text("Back to main menu").add()
+            .addPrompt();
+
+        var result = prompt.prompt(selectedItemResult.build());
+        String selectedItem = ((ListResult) result.get("search-criteria")).getSelectedId();
+
+        // Handle the user's choice
+        switch (selectedItem) {
+            case "BACK" -> render();
+            default -> System.out.println("Unknown search criteria.");
+        }
     }
 
+    /**
+     * Searches for a book in the library.
+     */
     private void searchBook() {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
+            // Print the list of books
             printBooks();
-            // Зчитайте дані про книги з файлу JSON
+            // Read book data from the JSON file
             JsonNode booksJson = objectMapper.readTree(new File("Data/books.json"));
 
-            // Використайте існуючий об'єкт ConsolePrompt та його PromptBuilder для створення списку опцій
+            // Create a console prompt for user interaction
             ConsolePrompt prompt = new ConsolePrompt();
             PromptBuilder promptBuilder = prompt.getPromptBuilder();
 
-            // Створіть список опцій для вибору критерію пошуку
+            // Create a list of options for choosing search criteria
             var selectedCriteriaResult = promptBuilder.createListPrompt()
                 .name("search-criteria")
                 .message("Choose search criteria:")
@@ -114,18 +156,15 @@ public class ConsoleUI implements Renderable {
                 .newItem("BACK").text("Back to main menu").add()
                 .addPrompt();
 
-            // Отримайте вибрану опцію
+            // Get the selected option
             var result = prompt.prompt(selectedCriteriaResult.build());
             String selectedCriteria = ((ListResult) result.get("search-criteria")).getSelectedId();
 
-            // Обробіть вибрану опцію
+            // Handle the selected option
             switch (selectedCriteria) {
                 case "TITLE" -> searchByTitle(booksJson);
                 case "AUTHOR" -> searchByAuthor(booksJson);
-                case "BACK" -> {
-                    render();
-                    printBooks();
-                }
+                case "BACK" -> render();
                 default -> System.out.println("Unknown search criteria.");
             }
 
@@ -134,34 +173,39 @@ public class ConsoleUI implements Renderable {
         }
     }
 
+    /**
+     * Searches for a book by title.
+     *
+     * @param booksJson the JSON node containing book data.
+     */
     private void searchByTitle(JsonNode booksJson) {
         try {
-            // Створіть список назв книг для відображення в консолі
+            // Create a list of book titles for display
             List<String> bookTitles = new ArrayList<>();
             for (JsonNode book : booksJson) {
                 bookTitles.add(book.get("title").asText());
             }
 
-            // Створіть об'єкт для інтерактивного введення користувача
+            // Create a console prompt for user interaction
             ConsolePrompt prompt = new ConsolePrompt();
             PromptBuilder promptBuilder = prompt.getPromptBuilder();
 
-            // Створіть список опцій для вибору книги за назвою
+            // Create a list of options for choosing a book title
             ListPromptBuilder listPromptBuilder = promptBuilder.createListPrompt()
                 .name("book-titles")
                 .message("Choose a book:");
 
-            // Додайте кожну назву книги до списку опцій
+            // Add each book title to the list of options
             bookTitles.forEach(title -> listPromptBuilder.newItem(title).add());
 
-            // Додайте підказку вибору книги та збудуйте підказку
+            // Build the prompt with a selection hint
             var selectedTitleResult = listPromptBuilder.addPrompt().build();
 
-            // Отримайте вибрану назву книги
+            // Get the selected book title
             var result = prompt.prompt(selectedTitleResult);
             String selectedTitle = ((ListResult) result.get("book-titles")).getSelectedId();
 
-            // Знайдіть книгу за вибраною назвою
+            // Find the book by the selected title
             for (JsonNode book : booksJson) {
                 String title = book.get("title").asText();
                 if (title.equalsIgnoreCase(selectedTitle)) {
@@ -178,34 +222,39 @@ public class ConsoleUI implements Renderable {
         }
     }
 
+    /**
+     * Searches for a book by author.
+     *
+     * @param booksJson the JSON node containing book data.
+     */
     private void searchByAuthor(JsonNode booksJson) {
         try {
-            // Створіть список авторів книг для відображення в консолі
+            // Create a list of book authors for display
             List<String> bookAuthors = new ArrayList<>();
             for (JsonNode book : booksJson) {
                 bookAuthors.add(book.get("author").asText());
             }
 
-            // Створіть об'єкт для інтерактивного введення користувача
+            // Create a console prompt for user interaction
             ConsolePrompt prompt = new ConsolePrompt();
             PromptBuilder promptBuilder = prompt.getPromptBuilder();
 
-            // Створіть список опцій для вибору книги за автором
+            // Create a list of options for choosing a book by author
             ListPromptBuilder listPromptBuilder = promptBuilder.createListPrompt()
                 .name("book-authors")
                 .message("Choose a book by author:");
 
-            // Додайте кожного автора книги до списку опцій
+            // Add each book author to the list of options
             bookAuthors.forEach(author -> listPromptBuilder.newItem(author).add());
 
-            // Додайте підказку вибору автора книги та збудуйте підказку
+            // Build the prompt with a selection hint
             var selectedAuthorResult = listPromptBuilder.addPrompt().build();
 
-            // Отримайте вибраного автора книги
+            // Get the selected book author
             var result = prompt.prompt(selectedAuthorResult);
             String selectedAuthor = ((ListResult) result.get("book-authors")).getSelectedId();
 
-            // Знайдіть книги за вибраним автором
+            // Find books by the selected author
             boolean found = false;
             for (JsonNode book : booksJson) {
                 String author = book.get("author").asText();
@@ -226,12 +275,15 @@ public class ConsoleUI implements Renderable {
         }
     }
 
+    /**
+     * Displays the list of books in the library.
+     */
     private void displayBooks() {
         // Create an ObjectMapper object to work with JSON
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
-            printBooks();;
+            printBooks();
             // Load JSON from file into a JsonNode
             JsonNode booksJson = objectMapper.readTree(new File("Data/books.json"));
 
@@ -256,7 +308,11 @@ public class ConsoleUI implements Renderable {
         }
     }
 
+    /**
+     * Prints ASCII art for the list of books.
+     */
     private static void printBooks() {
+        // ASCII art for the list of books
         String art = "       .--.                   .---.\n"
             + "   .---|__|           .-.     |~~~|\n"
             + ".--|===|--|_          |_|     |~~~|--.\n"
@@ -268,6 +324,7 @@ public class ConsoleUI implements Renderable {
             + "|  |===|--|   \\.'\\|===|~|--|%%|~~~|--|\n"
             + "^--^---'--^    `-'`---^-^--^--^---'--'\n";
 
+        // Print each character of the ASCII art with a slight delay for visual effect
         for (int i = 0; i < art.length(); i++) {
             System.out.print(art.charAt(i));
             try {

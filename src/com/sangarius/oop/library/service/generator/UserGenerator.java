@@ -7,7 +7,17 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
+/**
+ * Utility class for generating sets of users.
+ */
 public class UserGenerator {
+
+    /**
+     * Generates a set of users.
+     *
+     * @param count The number of users to generate.
+     * @return A set of generated users.
+     */
     public static Set<User> generateUsers(int count) {
         Set<User> users = new HashSet<>();
         Faker faker = new Faker();
