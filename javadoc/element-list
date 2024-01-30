@@ -1,0 +1,10 @@
+com.sangarius.oop.library
+com.sangarius.oop.library.appui
+com.sangarius.oop.library.persistence.entity
+com.sangarius.oop.library.persistence.entity.impl
+com.sangarius.oop.library.persistence.exception
+com.sangarius.oop.library.persistence.repository
+com.sangarius.oop.library.persistence.repository.contracts
+com.sangarius.oop.library.persistence.repository.impl.json
+com.sangarius.oop.library.service
+com.sangarius.oop.library.service.generator

@@ -19,6 +19,25 @@
     "id": "19342a98-8691-4bde-b2be-ca1882d01422"
   },
   {
+    "title": "Jacob Have I Loved",
+    "author": "Milda Pagac",
+    "category": {
+      "name": "Crime/Detective",
+      "id": "dcff40cd-15a9-4759-9622-aaa25a594306"
+    },
+    "yearPublished": 1858,
+    "reviews": [
+      {
+        "reviewText": "Ducimus ipsam quia est qui libero quia. Quia dolor ut non voluptas cupiditate cumque. Qui velit voluptates.",
+        "rating": 3,
+        "reviewerId": "82663ee0-6a72-4083-b841-6c1c7b4ab2d0",
+        "bookId": "5dfc832c-d7f1-47ea-aa13-92eb95f93b00",
+        "id": "8e9e2318-81a6-4743-9280-e583913b93ae"
+      }
+    ],
+    "id": "40f88fba-3ac0-4485-a522-5d8f98cec826"
+  },
+  {
     "title": "Consider the Lilies",
     "author": "Mr. Jacquelin Denesik",
     "category": {
@@ -36,6 +55,25 @@
       }
     ],
     "id": "f9f7e169-1bdc-4086-bb41-e50272d62d2d"
+  },
+  {
+    "title": "East of Eden",
+    "author": "Bryon Wilderman",
+    "category": {
+      "name": "Narrative nonfiction",
+      "id": "6821e3dc-3ffc-4b20-92e9-8d4a7f469719"
+    },
+    "yearPublished": 1998,
+    "reviews": [
+      {
+        "reviewText": "Eum accusantium perferendis sequi temporibus molestiae deleniti. Nulla numquam suscipit inventore enim similique quisquam consequatur. Ipsum repellat minima voluptatum. Fugiat culpa excepturi aut ab ut molestias dignissimos. Excepturi natus unde.",
+        "rating": 3,
+        "reviewerId": "95d3b7e3-7ac7-4cfe-8d65-bfe129edc3e7",
+        "bookId": "0536a635-6792-4c11-b575-7736a6e5846d",
+        "id": "95c7cbed-5ec0-4266-ada1-e42bc55ef26e"
+      }
+    ],
+    "id": "5e4b6e83-32e0-4b16-990a-53524d786b2a"
   },
   {
     "title": "Ring of Bright Water",
@@ -74,6 +112,25 @@
       }
     ],
     "id": "341f1cea-eb8c-43ef-8e7d-94d4ed410356"
+  },
+  {
+    "title": "The Glory and the Dream",
+    "author": "Shawn McKenzie",
+    "category": {
+      "name": "Comic/Graphic Novel",
+      "id": "9121c7dc-722f-44aa-9af3-b1b17e5a460b"
+    },
+    "yearPublished": 1915,
+    "reviews": [
+      {
+        "reviewText": "Ducimus ipsam quia est qui libero quia. Quia dolor ut non voluptas cupiditate cumque. Qui velit voluptates.",
+        "rating": 3,
+        "reviewerId": "82663ee0-6a72-4083-b841-6c1c7b4ab2d0",
+        "bookId": "5dfc832c-d7f1-47ea-aa13-92eb95f93b00",
+        "id": "8e9e2318-81a6-4743-9280-e583913b93ae"
+      }
+    ],
+    "id": "1d2ddee3-9aec-436f-8497-c64ed9cb547a"
   },
   {
     "title": "A Time of Gifts",

@@ -14,11 +14,32 @@
     "id": "052c5f0c-55d0-4eeb-8caa-b984ea604ca5"
   },
   {
+    "reviewText": "Eum accusantium perferendis sequi temporibus molestiae deleniti. Nulla numquam suscipit inventore enim similique quisquam consequatur. Ipsum repellat minima voluptatum. Fugiat culpa excepturi aut ab ut molestias dignissimos. Excepturi natus unde.",
+    "rating": 3,
+    "reviewerId": "95d3b7e3-7ac7-4cfe-8d65-bfe129edc3e7",
+    "bookId": "0536a635-6792-4c11-b575-7736a6e5846d",
+    "id": "95c7cbed-5ec0-4266-ada1-e42bc55ef26e"
+  },
+  {
     "reviewText": "Ducimus reprehenderit autem facilis est at vel voluptatem. Eum nulla hic esse et quia. Porro quo dicta rerum minus totam aut.",
     "rating": 1,
     "reviewerId": "ccdacbda-e43a-4e78-8621-c62fa731a4f0",
     "bookId": "a671f6a2-58b0-4725-883b-18d6fbf0ef80",
     "id": "dcd9fb42-f87a-4799-97a0-345d285b12c9"
+  },
+  {
+    "reviewText": "Ducimus ipsam quia est qui libero quia. Quia dolor ut non voluptas cupiditate cumque. Qui velit voluptates.",
+    "rating": 3,
+    "reviewerId": "82663ee0-6a72-4083-b841-6c1c7b4ab2d0",
+    "bookId": "5dfc832c-d7f1-47ea-aa13-92eb95f93b00",
+    "id": "8e9e2318-81a6-4743-9280-e583913b93ae"
+  },
+  {
+    "reviewText": "Corporis omnis dolor omnis magnam saepe ipsum. Adipisci et aut est quia. Assumenda sint ut impedit dicta omnis quo sit. Accusamus dolor id dolorum voluptate praesentium nulla aspernatur. Sunt nihil quos inventore animi ut.",
+    "rating": 2,
+    "reviewerId": "58be748d-ea0f-43eb-a45d-1a4f6b342a81",
+    "bookId": "7a6b5a0c-510f-430e-bb2c-faa66d3620f5",
+    "id": "71fb3f1d-61fa-4aef-802c-4f53946c7a68"
   },
   {
     "reviewText": "Non suscipit voluptas repudiandae suscipit qui eveniet deserunt. Iusto autem rerum accusamus dignissimos. Placeat eos et alias in quibusdam dicta. Dignissimos asperiores similique.",
