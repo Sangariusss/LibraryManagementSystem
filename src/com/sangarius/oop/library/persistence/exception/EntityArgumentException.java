@@ -6,6 +6,7 @@ import java.util.List;
  * Exception thrown for invalid entity arguments.
  */
 public class EntityArgumentException extends RuntimeException {
+
     private final List<String> errors;
 
     /**

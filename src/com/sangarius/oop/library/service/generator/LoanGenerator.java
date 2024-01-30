@@ -16,6 +16,7 @@ import java.util.UUID;
  * Utility class for generating sets of loans.
  */
 public class LoanGenerator {
+
     private static final Faker faker = new Faker();
 
     /**

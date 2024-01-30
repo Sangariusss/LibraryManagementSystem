@@ -44,7 +44,7 @@ final class Startup {
 
         // Review-related operations
         ReviewRepositoryService reviewService = new ReviewRepositoryService(jsonRepositoryFactory.getReviewRepository());
-        Set<Review> reviews = ReviewGenerator.generateReviews(3, users);
+        Set<Review> reviews = ReviewGenerator.generateReviews(3, users, "Data/books.json");
         reviewService.processReviewsAndCommit(reviews);
 
         // Book-related operations

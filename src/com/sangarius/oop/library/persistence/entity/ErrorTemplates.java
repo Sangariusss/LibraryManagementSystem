@@ -5,6 +5,7 @@ package com.sangarius.oop.library.persistence.entity;
  * Each template corresponds to a specific validation error type.
  */
 public enum ErrorTemplates {
+
     REQUIRED("Field %s is required."),
     MIN_LENGTH("Field %s cannot be less than %d characters."),
     MAX_LENGTH("Field %s cannot exceed %d characters."),

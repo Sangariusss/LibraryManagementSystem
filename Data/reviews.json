@@ -1,65 +1,128 @@
 [
   {
-    "reviewText": "Id ullam aperiam. Reiciendis omnis eos fugit vitae. A repellendus eius quo ratione asperiores quam.",
-    "rating": 2,
-    "reviewerId": "18d12fab-1c5d-47b6-b234-2ed413378c35",
-    "bookId": "33238749-5cb1-48f8-b448-04f72c7a74ae",
-    "id": "ab747b97-985b-4fa2-9684-e00f6e4062d6"
-  },
-  {
-    "reviewText": "Reprehenderit distinctio laboriosam labore recusandae. Ab sed saepe tenetur sit molestiae illo. Dolore tempora non eligendi.",
-    "rating": 3,
-    "reviewerId": "18d12fab-1c5d-47b6-b234-2ed413378c35",
-    "bookId": "b53fa0c7-4835-4f53-9494-3b18b98935f6",
-    "id": "052c5f0c-55d0-4eeb-8caa-b984ea604ca5"
-  },
-  {
-    "reviewText": "Eum accusantium perferendis sequi temporibus molestiae deleniti. Nulla numquam suscipit inventore enim similique quisquam consequatur. Ipsum repellat minima voluptatum. Fugiat culpa excepturi aut ab ut molestias dignissimos. Excepturi natus unde.",
-    "rating": 3,
-    "reviewerId": "95d3b7e3-7ac7-4cfe-8d65-bfe129edc3e7",
-    "bookId": "0536a635-6792-4c11-b575-7736a6e5846d",
-    "id": "95c7cbed-5ec0-4266-ada1-e42bc55ef26e"
-  },
-  {
-    "reviewText": "Ducimus reprehenderit autem facilis est at vel voluptatem. Eum nulla hic esse et quia. Porro quo dicta rerum minus totam aut.",
+    "reviewText": "Neque ut sed numquam. Dolorem laudantium autem dolor unde deleniti. Voluptatem provident rerum suscipit cupiditate vitae. Temporibus odit aut voluptates veritatis expedita aliquam perspiciatis. Omnis non est numquam sapiente.",
     "rating": 1,
-    "reviewerId": "ccdacbda-e43a-4e78-8621-c62fa731a4f0",
-    "bookId": "a671f6a2-58b0-4725-883b-18d6fbf0ef80",
-    "id": "dcd9fb42-f87a-4799-97a0-345d285b12c9"
+    "reviewer": {
+      "email": "john.emmerich@gmail.com",
+      "name": "Sean Leannon",
+      "id": "6f831fb0-ecbb-4ab6-9b6d-5a7adfa4caa5"
+    },
+    "book": {
+      "title": "Infinite Jest",
+      "author": "Wm Schultz",
+      "category": {
+        "name": "Speech",
+        "id": "a1b6e91f-9456-41b7-8ba3-5db579ecd11c"
+      },
+      "yearPublished": 1950,
+      "reviews": [
+        {
+          "reviewText": "Repudiandae optio ea voluptas. Et quia error deserunt et aperiam at iusto. Quis numquam quia.",
+          "rating": 2,
+          "reviewer": {
+            "email": "matthew.volkman@yahoo.com",
+            "name": "Mr. Terrell Hermann",
+            "id": "4d0b99e4-4df5-45cb-b8df-d597a8c75885"
+          },
+          "id": "deea5f8a-93be-488b-9bad-0d563f8059b8"
+        }
+      ],
+      "id": "5c54d131-6913-412d-9acb-e9a793dfd8a3"
+    },
+    "id": "8b43d8f3-eb48-481d-8ba3-1a85c395fc05"
   },
   {
-    "reviewText": "Ducimus ipsam quia est qui libero quia. Quia dolor ut non voluptas cupiditate cumque. Qui velit voluptates.",
-    "rating": 3,
-    "reviewerId": "82663ee0-6a72-4083-b841-6c1c7b4ab2d0",
-    "bookId": "5dfc832c-d7f1-47ea-aa13-92eb95f93b00",
-    "id": "8e9e2318-81a6-4743-9280-e583913b93ae"
+    "reviewText": "Doloremque facilis maiores molestias. Sequi facilis eum occaecati. Tenetur voluptas porro porro voluptates sed animi voluptatem. Rerum illo eaque libero molestias eveniet et.",
+    "rating": 1,
+    "reviewer": {
+      "email": "matthew.volkman@yahoo.com",
+      "name": "Mr. Terrell Hermann",
+      "id": "4d0b99e4-4df5-45cb-b8df-d597a8c75885"
+    },
+    "id": "91ba0678-a38b-41a9-8a98-ac3f0b9b394b"
   },
   {
-    "reviewText": "Corporis omnis dolor omnis magnam saepe ipsum. Adipisci et aut est quia. Assumenda sint ut impedit dicta omnis quo sit. Accusamus dolor id dolorum voluptate praesentium nulla aspernatur. Sunt nihil quos inventore animi ut.",
+    "reviewText": "Repudiandae optio ea voluptas. Et quia error deserunt et aperiam at iusto. Quis numquam quia.",
     "rating": 2,
-    "reviewerId": "58be748d-ea0f-43eb-a45d-1a4f6b342a81",
-    "bookId": "7a6b5a0c-510f-430e-bb2c-faa66d3620f5",
-    "id": "71fb3f1d-61fa-4aef-802c-4f53946c7a68"
+    "reviewer": {
+      "email": "matthew.volkman@yahoo.com",
+      "name": "Mr. Terrell Hermann",
+      "id": "4d0b99e4-4df5-45cb-b8df-d597a8c75885"
+    },
+    "id": "deea5f8a-93be-488b-9bad-0d563f8059b8"
   },
   {
-    "reviewText": "Non suscipit voluptas repudiandae suscipit qui eveniet deserunt. Iusto autem rerum accusamus dignissimos. Placeat eos et alias in quibusdam dicta. Dignissimos asperiores similique.",
+    "reviewText": "Nihil adipisci id perspiciatis accusantium sit corporis neque. Perferendis veniam adipisci veritatis est enim neque est. Molestiae necessitatibus sequi aut quasi et. Aut quis velit aut similique aut voluptates rerum. Aspernatur iure suscipit in voluptatem hic delectus.",
     "rating": 2,
-    "reviewerId": "7bacc6df-bd14-4968-9154-c78947490f33",
-    "bookId": "795ecb01-b2d1-4def-9f0e-bd12e2780de8",
-    "id": "3bf91d57-09b9-4536-a85f-999dd894be4d"
+    "reviewer": {
+      "email": "john.emmerich@gmail.com",
+      "name": "Sean Leannon",
+      "id": "6f831fb0-ecbb-4ab6-9b6d-5a7adfa4caa5"
+    },
+    "book": {
+      "title": "The Green Bay Tree",
+      "author": "Miss Belkis Wuckert",
+      "category": {
+        "name": "Horror",
+        "id": "f06ce330-8594-4d7a-ba3c-7b09192825a6"
+      },
+      "yearPublished": 1902,
+      "reviews": [
+        {
+          "reviewText": "Repudiandae optio ea voluptas. Et quia error deserunt et aperiam at iusto. Quis numquam quia.",
+          "rating": 2,
+          "reviewer": {
+            "email": "matthew.volkman@yahoo.com",
+            "name": "Mr. Terrell Hermann",
+            "id": "4d0b99e4-4df5-45cb-b8df-d597a8c75885"
+          },
+          "id": "deea5f8a-93be-488b-9bad-0d563f8059b8"
+        }
+      ],
+      "id": "47ac4188-c759-412e-8895-291737fe7ae9"
+    },
+    "id": "18a2fcb7-826b-4c77-85e1-bbc55555dffe"
   },
   {
-    "reviewText": "Est ipsum et voluptas libero aut. Est tenetur possimus. Quia quis dolores ut rerum. Iure sint nihil esse.",
-    "rating": 2,
-    "reviewerId": "a1fdbed2-96f5-43d3-bef1-a600c20ff80c",
-    "bookId": "c58ed1fd-b1ae-4f3d-8a66-169e8290a69c",
-    "id": "410edfa3-cc1b-49a0-945f-61ebad8d2512"
+    "reviewText": "Sapiente non perspiciatis quia ex. Deserunt non ab qui ut. Necessitatibus et quam dolores blanditiis atque repudiandae.",
+    "rating": 4,
+    "reviewer": {
+      "email": "john.emmerich@gmail.com",
+      "name": "Sean Leannon",
+      "id": "6f831fb0-ecbb-4ab6-9b6d-5a7adfa4caa5"
+    },
+    "book": {
+      "title": "Infinite Jest",
+      "author": "Wm Schultz",
+      "category": {
+        "name": "Speech",
+        "id": "a1b6e91f-9456-41b7-8ba3-5db579ecd11c"
+      },
+      "yearPublished": 1950,
+      "reviews": [
+        {
+          "reviewText": "Repudiandae optio ea voluptas. Et quia error deserunt et aperiam at iusto. Quis numquam quia.",
+          "rating": 2,
+          "reviewer": {
+            "email": "matthew.volkman@yahoo.com",
+            "name": "Mr. Terrell Hermann",
+            "id": "4d0b99e4-4df5-45cb-b8df-d597a8c75885"
+          },
+          "id": "deea5f8a-93be-488b-9bad-0d563f8059b8"
+        }
+      ],
+      "id": "5c54d131-6913-412d-9acb-e9a793dfd8a3"
+    },
+    "id": "613edb2b-1a00-499f-84d7-4746d1af92ed"
   },
   {
-    "reviewText": "Suscipit autem consequatur architecto minima unde sunt laboriosam. Aut itaque suscipit aut est placeat. Expedita deserunt odio debitis voluptatem voluptatem neque. Ratione aliquid veniam nihil. Vitae natus minus ipsum distinctio odio eveniet.",
-    "rating": 2,
-    "reviewerId": "a1fdbed2-96f5-43d3-bef1-a600c20ff80c",
-    "bookId": "0c61b87c-3da2-427b-80db-3d3184e5b796",
-    "id": "37b43e8d-7f79-4106-87aa-ff80bff2e320"
+    "reviewText": "Nihil ad quae. Et earum aspernatur libero rerum facilis. Et ut odio ea. Aliquam et necessitatibus amet id quia ipsum. Nobis consequuntur nihil velit maiores tempore nemo cupiditate.",
+    "rating": 4,
+    "reviewer": {
+      "email": "matthew.volkman@yahoo.com",
+      "name": "Mr. Terrell Hermann",
+      "id": "4d0b99e4-4df5-45cb-b8df-d597a8c75885"
+    },
+    "id": "2a3d183a-091a-494c-8035-2b742b3f3c61"
   }
 ]

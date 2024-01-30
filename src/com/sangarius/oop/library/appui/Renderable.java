@@ -6,6 +6,7 @@ import java.io.IOException;
  * The interface representing an object that can be rendered, typically used for rendering user interfaces.
  */
 public interface Renderable {
+
     /**
      * Renders the object, typically involving displaying some form of user interface.
      *

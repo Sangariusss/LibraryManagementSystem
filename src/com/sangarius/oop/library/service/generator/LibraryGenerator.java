@@ -15,6 +15,7 @@ import java.util.UUID;
  * Utility class for generating sets of sample libraries.
  */
 public class LibraryGenerator {
+
     private static final Faker faker = new Faker();
 
     /**

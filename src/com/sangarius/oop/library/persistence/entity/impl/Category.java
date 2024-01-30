@@ -12,6 +12,7 @@ import java.util.UUID;
  * Represents a category of books in the library.
  */
 public class Category extends Entity {
+
     private String name;
 
     /**

@@ -2,11 +2,12 @@ package com.sangarius.oop.library.persistence.repository.impl.json;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.entity.impl.Review;
+import com.sangarius.oop.library.persistence.entity.impl.User;
 import com.sangarius.oop.library.persistence.repository.contracts.ReviewRepository;
 
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -26,26 +27,26 @@ public class ReviewJsonRepositoryImpl extends GenericJsonRepository<Review> impl
     /**
      * Finds reviews by the book's ID.
      *
-     * @param bookId The ID of the book.
+     * @param book The book.
      * @return A set of reviews associated with the specified book.
      */
     @Override
-    public Set<Review> findAllByBookId(UUID bookId) {
+    public Set<Review> findAllByBook(Book book) {
         return entities.stream()
-            .filter(review -> bookId.equals(review.getBookId()))
+            .filter(review -> book.equals(review.getBook()))
             .collect(Collectors.toSet());
     }
 
     /**
-     * Finds reviews by the reviewer's ID.
+     * Finds reviews by the reviewer.
      *
-     * @param reviewerId The ID of the reviewer.
+     * @param reviewer The reviewer (user).
      * @return A set of reviews associated with the specified reviewer.
      */
     @Override
-    public Set<Review> findAllByReviewerId(int reviewerId) {
+    public Set<Review> findAllByReviewer(User reviewer) {
         return entities.stream()
-            .filter(review -> reviewerId == review.getReviewerId().hashCode())
+            .filter(review -> reviewer == review.getReviewer())
             .collect(Collectors.toSet());
     }
 

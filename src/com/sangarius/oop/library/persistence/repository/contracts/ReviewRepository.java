@@ -1,10 +1,11 @@
 package com.sangarius.oop.library.persistence.repository.contracts;
 
+import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.entity.impl.Review;
+import com.sangarius.oop.library.persistence.entity.impl.User;
 import com.sangarius.oop.library.persistence.repository.Repository;
 
 import java.util.Set;
-import java.util.UUID;
 
 /**
  * Repository interface for managing reviews.
@@ -14,18 +15,18 @@ public interface ReviewRepository extends Repository<Review> {
     /**
      * Finds reviews by the book's ID.
      *
-     * @param bookId The ID of the book.
+     * @param book The book.
      * @return A set of reviews associated with the specified book.
      */
-    Set<Review> findAllByBookId(UUID bookId);
+    Set<Review> findAllByBook(Book book);
 
     /**
-     * Finds reviews by the reviewer's ID.
+     * Finds reviews by the reviewer.
      *
-     * @param reviewerId The ID of the reviewer.
+     * @param reviewer The reviewer (user).
      * @return A set of reviews associated with the specified reviewer.
      */
-    Set<Review> findAllByReviewerId(int reviewerId);
+    Set<Review> findAllByReviewer(User reviewer);
 
     /**
      * Finds reviews with a specific rating.

@@ -14,8 +14,8 @@ public class Review extends Entity {
 
     private String reviewText;
     private int rating;
-    private UUID reviewerId;
-    private UUID bookId;
+    private User reviewer;
+    private Book book;
 
     /**
      * Constructs a new Review with the specified details.
@@ -23,15 +23,15 @@ public class Review extends Entity {
      * @param id          The ID of the review.
      * @param reviewText  The text of the review.
      * @param rating      The rating given in the review.
-     * @param reviewerId  The ID of the reviewer (user).
-     * @param bookId      The ID of the associated book.
+     * @param reviewer    The reviewer (user).
+     * @param book        The associated book.
      */
-    public Review(UUID id, String reviewText, int rating, UUID reviewerId, UUID bookId) {
+    public Review(UUID id, String reviewText, int rating, User reviewer, Book book) {
         super(id);
         this.reviewText = reviewText;
         this.rating = rating;
-        this.reviewerId = reviewerId;
-        this.bookId = bookId;
+        this.reviewer = reviewer;
+        this.book = book;
         validateReview();
     }
 
@@ -76,41 +76,41 @@ public class Review extends Entity {
     }
 
     /**
-     * Gets the ID of the reviewer (user).
+     * Gets the reviewer (user) of the review.
      *
-     * @return The ID of the reviewer (user).
+     * @return The reviewer (user) of the review.
      */
-    public UUID getReviewerId() {
-        return reviewerId;
+    public User getReviewer() {
+        return reviewer;
     }
 
     /**
-     * Sets the ID of the reviewer (user).
+     * Sets the reviewer (user) of the review.
      *
-     * @param reviewerId The new ID of the reviewer (user).
+     * @param reviewer The new reviewer (user) of the review.
      */
-    public void setReviewerId(UUID reviewerId) {
-        this.reviewerId = reviewerId;
-        validateReviewerId();
+    public void setReviewer(User reviewer) {
+        this.reviewer = reviewer;
+        validateReviewer();
     }
 
     /**
-     * Gets the ID of the associated book.
+     * Gets the associated book of the review.
      *
-     * @return The ID of the associated book.
+     * @return The associated book of the review.
      */
-    public UUID getBookId() {
-        return bookId;
+    public Book getBook() {
+        return book;
     }
 
     /**
-     * Sets the ID of the associated book.
+     * Sets the associated book of the review.
      *
-     * @param bookId The new ID of the associated book.
+     * @param book The new associated book of the review.
      */
-    public void setBookId(UUID bookId) {
-        this.bookId = bookId;
-        validateBookId();
+    public void setBook(Book book) {
+        this.book = book;
+        validateBook();
     }
 
     /**
@@ -119,8 +119,8 @@ public class Review extends Entity {
     private void validateReview() {
         validateReviewText();
         validateRating();
-        validateReviewerId();
-        validateBookId();
+        validateReviewer();
+        validateBook();
 
         if (!this.errors.isEmpty()) {
             throw new EntityArgumentException(errors);
@@ -143,18 +143,18 @@ public class Review extends Entity {
         }
     }
 
-    private void validateReviewerId() {
-        final String templateName = "Reviewer ID";
+    private void validateReviewer() {
+        final String templateName = "Reviewer";
 
-        if (reviewerId == null) {
+        if (reviewer == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }
 
-    private void validateBookId() {
-        final String templateName = "Book ID";
+    private void validateBook() {
+        final String templateName = "Book";
 
-        if (bookId == null) {
+        if (book == null) {
             errors.add(ErrorTemplates.REQUIRED.getTemplate().formatted(templateName));
         }
     }
@@ -198,8 +198,8 @@ public class Review extends Entity {
             "id=" + id +
             ", reviewText='" + reviewText + '\'' +
             ", rating=" + rating +
-            ", reviewerId=" + reviewerId +
-            ", bookId=" + bookId +
+            ", reviewer=" + reviewer +
+            ", book=" + book +
             '}';
     }
 }

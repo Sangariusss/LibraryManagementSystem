@@ -6,6 +6,7 @@ import java.nio.file.Path;
  * Factory for Path objects for DAO.
  */
 public enum JsonPathFactory {
+
     /**
      * Path to the users file.
      */

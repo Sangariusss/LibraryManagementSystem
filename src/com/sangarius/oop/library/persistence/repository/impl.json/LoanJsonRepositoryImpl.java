@@ -2,13 +2,13 @@ package com.sangarius.oop.library.persistence.repository.impl.json;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.entity.impl.Loan;
 import com.sangarius.oop.library.persistence.entity.impl.User;
 import com.sangarius.oop.library.persistence.repository.contracts.LoanRepository;
 
 import java.time.LocalDate;
 import java.util.Set;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 /**
@@ -67,13 +67,13 @@ public class LoanJsonRepositoryImpl extends GenericJsonRepository<Loan> implemen
     /**
      * Finds all loans associated with a specific book identified by its unique ID.
      *
-     * @param bookId The unique identifier of the book.
+     * @param book The book.
      * @return A set of loans associated with the specified book ID.
      */
     @Override
-    public Set<Loan> findAllByBookId(UUID bookId) {
+    public Set<Loan> findAllByBook(Book book) {
         return entities.stream()
-            .filter(loan -> bookId.equals(loan.getBorrowedBook().getId()))
+            .filter(loan -> book.equals(loan.getBorrowedBook()))
             .collect(Collectors.toSet());
     }
 }

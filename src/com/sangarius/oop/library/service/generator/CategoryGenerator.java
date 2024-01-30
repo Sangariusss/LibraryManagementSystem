@@ -11,6 +11,7 @@ import java.util.UUID;
  * Utility class for generating sets of categories with random names.
  */
 public class CategoryGenerator {
+
     private static final Faker faker = new Faker();
 
     /**

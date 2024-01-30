@@ -10,6 +10,7 @@ import java.util.Set;
  * Service class for processing categories and interacting with the category repository.
  */
 public class CategoryRepositoryService {
+
     private final CategoryRepository categoryRepository;
 
     /**

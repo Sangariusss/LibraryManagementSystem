@@ -14,6 +14,7 @@ import java.util.Set;
  * Service class for processing libraries and interacting with the library repository.
  */
 public class LibraryRepositoryService {
+
     private final LibraryRepository libraryRepository;
 
     /**
