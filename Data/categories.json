@@ -2,25 +2,5 @@
   {
     "name": "Mystery",
     "id": "0b2ef8c6-bfb5-4d3a-b350-763381235b95"
-  },
-  {
-    "name": "Comic/Graphic Novel",
-    "id": "b8793904-e217-4352-9fe9-d719a99d89b5"
-  },
-  {
-    "name": "Reference book",
-    "id": "e7598bec-e3eb-4f35-a0bb-74d6bb83c882"
-  },
-  {
-    "name": "Humor",
-    "id": "98db3b90-e366-4fec-b214-b36517c8139e"
-  },
-  {
-    "name": "Science fiction",
-    "id": "bc1f9154-7169-4e9b-8249-cdb8eb8e4dac"
-  },
-  {
-    "name": "Folklore",
-    "id": "32b84eae-3327-4b82-8b57-ef91cb2ff846"
   }
 ]

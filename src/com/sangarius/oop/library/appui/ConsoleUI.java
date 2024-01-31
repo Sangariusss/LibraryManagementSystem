@@ -2,10 +2,18 @@ package com.sangarius.oop.library.appui;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sangarius.oop.library.persistence.entity.impl.Book;
+import com.sangarius.oop.library.persistence.entity.impl.Category;
+import com.sangarius.oop.library.persistence.repository.RepositoryFactory;
+import com.sangarius.oop.library.service.BookRepositoryService;
+import de.codeshelf.consoleui.elements.PromptableElementIF;
 import de.codeshelf.consoleui.prompt.ConsolePrompt;
+import de.codeshelf.consoleui.prompt.InputResult;
 import de.codeshelf.consoleui.prompt.ListResult;
 import de.codeshelf.consoleui.prompt.builder.ListPromptBuilder;
 import de.codeshelf.consoleui.prompt.builder.PromptBuilder;
+import java.util.Set;
+import java.util.UUID;
 import org.fusesource.jansi.AnsiConsole;
 
 import java.io.File;
@@ -116,19 +124,97 @@ public class ConsoleUI implements Renderable {
         ConsolePrompt prompt = new ConsolePrompt();
         PromptBuilder promptBuilder = prompt.getPromptBuilder();
 
-        // Prompt the user to go back to the main menu
+        // Prompt the user for options
         var selectedItemResult = promptBuilder.createListPrompt()
+            .name("add-menu")
+            .message("Add menu:")
+            .newItem("ADD").text("Add a new book").add()
             .newItem("BACK").text("Back to main menu").add()
             .addPrompt();
 
         var result = prompt.prompt(selectedItemResult.build());
-        String selectedItem = ((ListResult) result.get("search-criteria")).getSelectedId();
+        String selectedItem = ((ListResult) result.get("add-menu")).getSelectedId();
 
         // Handle the user's choice
         switch (selectedItem) {
-            case "BACK" -> render();
-            default -> System.out.println("Unknown search criteria.");
+            case "ADD":
+                addNewBook();
+                break;
+            case "BACK":
+                render();
+                break;
+            default:
+                System.out.println("Unknown option.");
         }
+    }
+
+    private void addNewBook() throws IOException {
+        // Create a JSON repository factory
+        RepositoryFactory jsonRepositoryFactory = RepositoryFactory
+            .getRepositoryFactory(RepositoryFactory.JSON);
+
+        // Create a console prompt for user interaction
+        ConsolePrompt prompt = new ConsolePrompt();
+        PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+        // Prompt the user for book details
+        promptBuilder.createInputPrompt()
+            .name("title")
+            .message("Enter the title of the book: ")
+            .addPrompt();
+        promptBuilder.createInputPrompt()
+            .name("author")
+            .message("Enter the author of the book: ")
+            .addPrompt();
+        promptBuilder.createInputPrompt()
+            .name("category")
+            .message("Enter the category of the book: ")
+            .addPrompt();
+        promptBuilder.createInputPrompt()
+            .name("year")
+            .message("Enter the year the book was published: ")
+            .addPrompt();
+
+        // Combine all prompts into a single prompt sequence
+        var allPrompts = promptBuilder.build();
+
+        // Prompt the user for input using all prompts
+        var results = prompt.prompt(allPrompts);
+
+        // Extract user input
+        String title = ((InputResult)results.get("title")).getInput().trim();
+        String author = ((InputResult)results.get("author")).getInput().trim();
+        String categoryName = ((InputResult)results.get("category")).getInput().trim();
+        String yearInput = ((InputResult)results.get("year")).getInput().trim();
+
+        // Check if the input is a valid integer
+        int yearPublished;
+        try {
+            yearPublished = Integer.parseInt(yearInput);
+        } catch (NumberFormatException e) {
+            // Handle the case when input cannot be parsed to an integer
+            System.out.println("Invalid input for year published. Please enter a valid integer.");
+            return; // Exit the method or handle the error as appropriate
+        }
+
+        // Створюємо об'єкт UUID для нової книги
+        UUID bookId = UUID.randomUUID();
+
+        // Створюємо об'єкт Category
+        Category category = new Category(UUID.randomUUID(), categoryName); // Генеруємо новий UUID для категорії
+
+        // Створюємо новий об'єкт Book з отриманими даними
+        Book newBook = new Book(bookId, title, author, category, yearPublished);
+
+        // Створення екземпляру BookRepositoryService з використанням відповідного BookRepository
+        BookRepositoryService bookService = new BookRepositoryService(jsonRepositoryFactory.getBookRepository());
+
+        // Додавання нової книги за допомогою BookRepositoryService
+        bookService.processBooksAndCommit(Set.of(newBook));
+
+        jsonRepositoryFactory.commit();
+
+        System.out.println("Book added successfully!");
     }
 
     /**

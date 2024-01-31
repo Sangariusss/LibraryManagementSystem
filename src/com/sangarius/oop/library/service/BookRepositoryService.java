@@ -32,7 +32,6 @@ public class BookRepositoryService {
         }
     }
 
-    // This method is private and does not require JavaDoc
     private void printAllBooks() {
         bookRepository.findAll().forEach(System.out::println);
     }
