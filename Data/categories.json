@@ -2,5 +2,17 @@
   {
     "name": "Mystery",
     "id": "0b2ef8c6-bfb5-4d3a-b350-763381235b95"
+  },
+  {
+    "name": "Fiction narrative",
+    "id": "3c424997-91c8-4f33-b311-c5c790e77218"
+  },
+  {
+    "name": "Mythology",
+    "id": "5f7c39ba-9ff5-47be-95fa-ff853fa7ee85"
+  },
+  {
+    "name": "Speech",
+    "id": "35d76658-587c-4ad3-8086-5ee2f307d75e"
   }
 ]

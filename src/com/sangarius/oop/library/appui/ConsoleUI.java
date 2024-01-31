@@ -1,12 +1,16 @@
 package com.sangarius.oop.library.appui;
 
+import com.fasterxml.jackson.core.util.DefaultIndenter;
+import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.node.TextNode;
 import com.sangarius.oop.library.persistence.entity.impl.Book;
 import com.sangarius.oop.library.persistence.entity.impl.Category;
 import com.sangarius.oop.library.persistence.repository.RepositoryFactory;
 import com.sangarius.oop.library.service.BookRepositoryService;
-import de.codeshelf.consoleui.elements.PromptableElementIF;
 import de.codeshelf.consoleui.prompt.ConsolePrompt;
 import de.codeshelf.consoleui.prompt.InputResult;
 import de.codeshelf.consoleui.prompt.ListResult;
@@ -74,6 +78,7 @@ public class ConsoleUI implements Renderable {
             .message("Welcome to the book library")
             .newItem("ADD_BOOK").text("Add a book").add()
             .newItem("SEARCH_BOOK").text("Search for a book").add()
+            .newItem("EDIT_BOOK").text("Edit a book").add()
             .newItem("DISPLAY_BOOKS").text("Display the list of books").add()
             .newItem("EXIT").text("Exit").add()
             .addPrompt();
@@ -85,26 +90,24 @@ public class ConsoleUI implements Renderable {
 
         // Handle the user's choice
         switch (selectedItem) {
-            case "ADD_BOOK":
+            case "ADD_BOOK" ->
                 // Call the method to add a book
                 addBook();
-                break;
-            case "SEARCH_BOOK":
+            case "SEARCH_BOOK" ->
                 // Call the method to search for a book
                 searchBook();
-                break;
-            case "DISPLAY_BOOKS":
+            case "EDIT_BOOK" ->
+                // Call the method to edit a book
+                editBook();
+            case "DISPLAY_BOOKS" ->
                 // Call the method to display the list of books
                 displayBooks();
-                break;
-            case "EXIT":
+            case "EXIT" ->
                 // Call the method to exit the application
                 System.exit(0);
-                break;
-            default:
+            default ->
                 // Perform actions in case of an unknown choice
                 System.out.println("Unknown choice. Please try again.");
-                break;
         }
 
         // Restore the standard console output
@@ -137,17 +140,17 @@ public class ConsoleUI implements Renderable {
 
         // Handle the user's choice
         switch (selectedItem) {
-            case "ADD":
-                addNewBook();
-                break;
-            case "BACK":
-                render();
-                break;
-            default:
-                System.out.println("Unknown option.");
+            case "ADD" -> addNewBook();
+            case "BACK" -> render();
+            default -> System.out.println("Unknown option.");
         }
     }
 
+    /**
+     * Adds a new book to the library.
+     *
+     * @throws IOException if an I/O error occurs.
+     */
     private void addNewBook() throws IOException {
         // Create a JSON repository factory
         RepositoryFactory jsonRepositoryFactory = RepositoryFactory
@@ -356,6 +359,330 @@ public class ConsoleUI implements Renderable {
             if (!found) {
                 System.out.println("No books found by " + selectedAuthor + ".");
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Edits a specific book in the library.
+     */
+
+    private void editBook() {
+        try {
+            // Print the list of books
+            printBooks();
+
+            // Create a console prompt for user interaction
+            ConsolePrompt prompt = new ConsolePrompt();
+            PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+            // Prompt the user to enter the title of the book to edit
+            promptBuilder.createInputPrompt()
+                .name("title")
+                .message("Enter the title of the book to edit: ")
+                .addPrompt()
+                .build();
+
+            var titleInput = promptBuilder.build();
+            var result = prompt.prompt(titleInput);
+
+            // Get the title entered by the user
+            String bookTitle = ((InputResult)result.get("title")).getInput().trim();
+
+            // Read book data from the JSON file
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode booksJson = objectMapper.readTree(new File("Data/books.json"));
+
+            // Search for the book by title
+            boolean bookFound = false;
+            for (JsonNode book : booksJson) {
+                String title = book.get("title").asText();
+                if (title.equalsIgnoreCase(bookTitle)) {
+                    bookFound = true;
+
+                    // Book found, prompt the user to select an attribute to edit
+                    var selectedAttributeResult = promptBuilder.createListPrompt()
+                        .name("edit-attribute")
+                        .message("Choose the attribute to edit:")
+                        .newItem("TITLE").text("Edit title").add()
+                        .newItem("AUTHOR").text("Edit author").add()
+                        .newItem("YEAR").text("Edit publication year").add()
+                        .newItem("CATEGORY").text("Edit category").add()
+                        .newItem("BACK").text("Back to main menu").add()
+                        .addPrompt()
+                        .build();
+
+                    // Get the selected attribute
+                    var attributeResult = prompt.prompt(selectedAttributeResult);
+                    String selectedAttribute = ((ListResult) attributeResult.get("edit-attribute")).getSelectedId();
+
+                    // Handle the selected attribute
+                    switch (selectedAttribute) {
+                        case "TITLE" -> editTitle(book);
+                        case "AUTHOR" -> editAuthor(book);
+                        case "YEAR" -> editYear(book);
+                        case "CATEGORY" -> editCategory(book);
+                        case "BACK" -> render();
+                        default -> System.out.println("Unknown option.");
+                    }
+                    break;
+                }
+            }
+
+            // If the book is not found, print a message
+            if (!bookFound) {
+                System.out.println("Book not found.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void editTitle(JsonNode book) {
+        try {
+            // Get the current title of the book
+            String currentTitle = book.get("title").asText();
+
+            // Prompt the user to enter the new title
+            ConsolePrompt prompt = new ConsolePrompt();
+            PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+            promptBuilder.createInputPrompt()
+                .name("new-title")
+                .message("Enter the new title for the book: ")
+                .addPrompt()
+                .build();
+
+            var titleInput = promptBuilder.build();
+            var result = prompt.prompt(titleInput);
+
+            // Get the new title entered by the user
+            String newTitle = ((InputResult)result.get("new-title")).getInput().trim();
+
+            // Read the entire book data from the JSON file
+            ObjectMapper objectMapper = new ObjectMapper();
+            File jsonFile = new File("Data/books.json");
+            JsonNode booksJson = objectMapper.readTree(jsonFile);
+
+            // Update the title of the specific book in the JSON data
+            if (booksJson.isArray()) {
+                ArrayNode updatedBooksJson = objectMapper.createArrayNode();
+                for (JsonNode node : booksJson) {
+                    ObjectNode mutableBook = (ObjectNode) node;
+                    if (mutableBook.get("title").asText().equalsIgnoreCase(currentTitle)) {
+                        mutableBook.put("title", newTitle);
+                    }
+                    updatedBooksJson.add(mutableBook);
+                }
+
+                // Write the updated book data back to the JSON file
+                objectMapper.writeValue(jsonFile, updatedBooksJson);
+
+                // Format the JSON file for readability
+                formatJsonFile(jsonFile);
+
+                System.out.println("Title updated successfully from '" + currentTitle + "' to '" + newTitle + "'.");
+            } else {
+                System.out.println("Error: Unable to read book data from JSON file.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void editAuthor(JsonNode book) {
+        try {
+            // Get the current author of the book
+            String currentAuthor = book.get("author").asText();
+
+            // Prompt the user to enter the new author
+            ConsolePrompt prompt = new ConsolePrompt();
+            PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+            promptBuilder.createInputPrompt()
+                .name("new-author")
+                .message("Enter the new author for the book: ")
+                .addPrompt()
+                .build();
+
+            var authorInput = promptBuilder.build();
+            var result = prompt.prompt(authorInput);
+
+            // Get the new author entered by the user
+            String newAuthor = ((InputResult)result.get("new-author")).getInput().trim();
+
+            // Update the author in the JSON data
+            ((ObjectNode) book).put("author", newAuthor);
+
+            // Read the entire book data from the JSON file
+            ObjectMapper objectMapper = new ObjectMapper();
+            File jsonFile = new File("Data/books.json");
+            JsonNode booksJson = objectMapper.readTree(jsonFile);
+
+            // Update the author of the specific book in the JSON data
+            if (booksJson.isArray()) {
+                ArrayNode updatedBooksJson = objectMapper.createArrayNode();
+                for (JsonNode node : booksJson) {
+                    ObjectNode mutableBook = (ObjectNode) node;
+                    if (mutableBook.get("title").asText().equalsIgnoreCase(book.get("title").asText())) {
+                        mutableBook.put("author", newAuthor);
+                    }
+                    updatedBooksJson.add(mutableBook);
+                }
+
+                // Write the updated book data back to the JSON file
+                objectMapper.writeValue(jsonFile, updatedBooksJson);
+
+                // Format the JSON file for readability
+                formatJsonFile(jsonFile);
+
+                System.out.println("Author updated successfully from '" + currentAuthor + "' to '" + newAuthor + "'.");
+            } else {
+                System.out.println("Error: Unable to read book data from JSON file.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void editYear(JsonNode book) {
+        try {
+            // Get the current year of publication of the book
+            int currentYear = book.get("yearPublished").asInt();
+
+            // Prompt the user to enter the new year of publication
+            ConsolePrompt prompt = new ConsolePrompt();
+            PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+            promptBuilder.createInputPrompt()
+                .name("new-year")
+                .message("Enter the new year of publication for the book: ")
+                .addPrompt()
+                .build();
+
+            var yearInput = promptBuilder.build();
+            var result = prompt.prompt(yearInput);
+
+            // Get the new year entered by the user
+            String newYearInput = ((InputResult)result.get("new-year")).getInput().trim();
+
+            // Check if the input is a valid integer
+            int newYear;
+            try {
+                newYear = Integer.parseInt(newYearInput);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input for year. Please enter a valid integer.");
+                return;
+            }
+
+            // Update the year of publication in the JSON data
+            ((ObjectNode) book).put("yearPublished", newYear);
+
+            // Read the entire book data from the JSON file
+            ObjectMapper objectMapper = new ObjectMapper();
+            File jsonFile = new File("Data/books.json");
+            JsonNode booksJson = objectMapper.readTree(jsonFile);
+
+            // Update the year of publication of the specific book in the JSON data
+            if (booksJson.isArray()) {
+                ArrayNode updatedBooksJson = objectMapper.createArrayNode();
+                for (JsonNode node : booksJson) {
+                    ObjectNode mutableBook = (ObjectNode) node;
+                    if (mutableBook.get("title").asText().equalsIgnoreCase(book.get("title").asText())) {
+                        mutableBook.put("yearPublished", newYear);
+                    }
+                    updatedBooksJson.add(mutableBook);
+                }
+
+                // Write the updated book data back to the JSON file
+                objectMapper.writeValue(jsonFile, updatedBooksJson);
+
+                // Format the JSON file for readability
+                formatJsonFile(jsonFile);
+
+                System.out.println("Year of publication updated successfully from '" + currentYear + "' to '" + newYear + "'.");
+            } else {
+                System.out.println("Error: Unable to read book data from JSON file.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void editCategory(JsonNode book) {
+        try {
+            // Get the current category of the book
+            String currentCategory = book.get("category").get("name").asText();
+
+            // Prompt the user to enter the new category
+            ConsolePrompt prompt = new ConsolePrompt();
+            PromptBuilder promptBuilder = prompt.getPromptBuilder();
+
+            promptBuilder.createInputPrompt()
+                .name("new-category")
+                .message("Enter the new category for the book: ")
+                .addPrompt()
+                .build();
+
+            var categoryInput = promptBuilder.build();
+            var result = prompt.prompt(categoryInput);
+
+            // Get the new category entered by the user
+            String newCategory = ((InputResult)result.get("new-category")).getInput().trim();
+
+            // Convert the book to a mutable ObjectNode to allow modifications
+            ObjectMapper objectMapper = new ObjectMapper();
+            ObjectNode mutableBook = (ObjectNode) book.deepCopy();
+
+            // Update the category in the mutable book data
+            ((ObjectNode) mutableBook.get("category")).set("name", new TextNode(newCategory));
+
+            // Read the entire book data from the JSON file
+            File jsonFile = new File("Data/books.json");
+            JsonNode booksJson = objectMapper.readTree(jsonFile);
+
+            // Update the category of the specific book in the JSON data
+            if (booksJson.isArray()) {
+                ArrayNode updatedBooksJson = objectMapper.createArrayNode();
+                for (JsonNode node : booksJson) {
+                    ObjectNode currentBook = (ObjectNode) node.deepCopy();
+                    if (currentBook.get("title").asText().equalsIgnoreCase(book.get("title").asText())) {
+                        currentBook.set("category", mutableBook.get("category"));
+                    }
+                    updatedBooksJson.add(currentBook);
+                }
+
+                // Write the updated book data back to the JSON file
+                objectMapper.writeValue(jsonFile, updatedBooksJson);
+
+                // Format the JSON file for readability
+                formatJsonFile(jsonFile);
+
+                System.out.println("Category updated successfully from '" + currentCategory + "' to '" + newCategory + "'.");
+            } else {
+                System.out.println("Error: Unable to read book data from JSON file.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    private void formatJsonFile(File jsonFile) {
+        try {
+            // Read the JSON data from the file
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonData = objectMapper.readTree(jsonFile);
+
+            // Configure the writer with desired formatting
+            DefaultPrettyPrinter printer = new DefaultPrettyPrinter();
+            printer.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
+            printer.indentObjectsWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
+            printer.withArrayIndenter(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);
+
+            // Write the JSON data back to the file with the specified formatting
+            objectMapper.writer(printer).writeValue(jsonFile, jsonData);
         } catch (IOException e) {
             e.printStackTrace();
         }
