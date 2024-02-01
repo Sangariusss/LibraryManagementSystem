@@ -218,6 +218,8 @@ public class ConsoleUI implements Renderable {
         jsonRepositoryFactory.commit();
 
         System.out.println("Book added successfully!");
+
+        addBook();
     }
 
     /**
@@ -483,6 +485,7 @@ public class ConsoleUI implements Renderable {
                 formatJsonFile(jsonFile);
 
                 System.out.println("Title updated successfully from '" + currentTitle + "' to '" + newTitle + "'.");
+                editBook();
             } else {
                 System.out.println("Error: Unable to read book data from JSON file.");
             }
@@ -538,6 +541,7 @@ public class ConsoleUI implements Renderable {
                 formatJsonFile(jsonFile);
 
                 System.out.println("Author updated successfully from '" + currentAuthor + "' to '" + newAuthor + "'.");
+                editBook();
             } else {
                 System.out.println("Error: Unable to read book data from JSON file.");
             }
@@ -602,6 +606,7 @@ public class ConsoleUI implements Renderable {
                 formatJsonFile(jsonFile);
 
                 System.out.println("Year of publication updated successfully from '" + currentYear + "' to '" + newYear + "'.");
+                editBook();
             } else {
                 System.out.println("Error: Unable to read book data from JSON file.");
             }
@@ -660,6 +665,7 @@ public class ConsoleUI implements Renderable {
                 formatJsonFile(jsonFile);
 
                 System.out.println("Category updated successfully from '" + currentCategory + "' to '" + newCategory + "'.");
+                editBook();
             } else {
                 System.out.println("Error: Unable to read book data from JSON file.");
             }
